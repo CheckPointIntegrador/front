@@ -1,5 +1,7 @@
 #categorias {
     margin: 10rem;
+   
+ 
 }
 
 #categorias h2 {
@@ -7,6 +9,23 @@
 }
 
 #categorias img {
-    width: 150px;
-    height: 150px;
+    width: 10rem;
+    height: 10rem;
+    
+}
+
+#categorias a {
+    text-decoration: none;
+}
+
+#categorias p {
+    font-size: 2rem;
+    color: var(--brown-dark);
+    justify-content: center;
+}
+
+
+
+.container {
+    margin: 0;
 }

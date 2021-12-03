@@ -13,25 +13,30 @@ const Category = () => {
         <>
             <section id="categorias">
                 <h2>Escolha por categoria:</h2>
-                <Container>
+
                     <Row className="justify-content-md-center">
                         <Col >
                             <Image src={categoriaCacto} roundedCircle />
+                            <p>Cacto</p>
                         </Col>
                         <Col >
                             <Image src={categoriaSuculenta} roundedCircle />
+                            <p>Suculenta</p>
                         </Col>
                         <Col >
                             <Image src={categoriaSamambaia} roundedCircle />
+                            <p>Samambaia</p>
                         </Col>
                         <Col >
                             <Image src={categoriaFlores} roundedCircle />
+                            <p>Flores</p>
                         </Col>
                         <Col >
                             <Image src={categoriaJardinagem} roundedCircle />
+                            <p>Jardinagem</p>
                         </Col>
                     </Row>
-                </Container>
+                
             </section>
         </>
 
