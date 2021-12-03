@@ -1,11 +1,11 @@
+import RouteList from './routes';
 import './App.scss';
-import Cards from "./components/Card/index"
 
-function App() {
+const App = () => {
   return (
-    <> 
+    <>
+      <RouteList />
     </>
   );
 }
-
 export default App;
