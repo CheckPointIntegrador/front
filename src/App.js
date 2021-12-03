@@ -1,7 +1,7 @@
 import './App.scss';
 import Header from './components/Header';
 import BannerHome from './components/BannerHome';
-import Carousel from './components/Carousel';
+import Carousel from './components/Carrossel';
 import Category from './components/HomePage/Category';
 
 
