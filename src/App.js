@@ -1,12 +1,9 @@
 import './App.scss';
-import Header from './components/Header';
-import BannerHome from './components/BannerHome';
+import Cards from "./components/Card/index"
 
 function App() {
   return (
-    <>
-    <Header/>
-    <BannerHome/>
+    <> 
     </>
   );
 }
