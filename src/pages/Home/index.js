@@ -1,6 +1,6 @@
 import Header from '../../components/Header';
 import BannerHome from '../../components/BannerHome';
-import Carousel from '../../components/Carousel';
+import Carrossel from '../../components/Carrossel';
 import Category from '../../components/HomePage/Category';
 
 const Home = () =>{
@@ -8,7 +8,7 @@ const Home = () =>{
     <>
         <Header/>
         <BannerHome/>
-        <Carousel/>
+        <Carrossel/>
         <Category/>
     </>
     )
