@@ -1,0 +1,55 @@
+
+
+
+// *********************************************
+// #######   CONFIGURAÇÃO DA IMAGEM DO PERFIL   #######
+// *********************************************
+.profile-img {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    padding: 0.3rem;
+    border: 1px solid var(--cor-laranja);
+    
+  }
+  
+  .photo-wrap {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  // *********************************************
+  //    #######   ESTILO PARA O TEXTO   #######
+  // *********************************************
+  .aboutme{
+    margin-top: 4rem;
+  }
+  
+  .profile-name {
+    color: var(--brown-dark);
+    padding-bottom: 10px;
+    text-align: center;
+  
+    border-bottom-width: 3.1px;
+    width: fit-content;
+    width: -moz-fit-content;
+  }
+  
+  .profile-social{
+    color: var(--green-medium);
+    text-align: center;
+  
+  }
+  
+  .textBody{
+    text-align: justify;
+    padding-top: 2rem;
+  }
+  
+  @media (max-width: 468px) {
+    .profile-img {
+      width: 15rem;
+      height: 15rem;
+    }
+  }
