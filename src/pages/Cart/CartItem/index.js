@@ -50,7 +50,7 @@ const CartItem = (props) =>{
           </Col>
           <Col xs={1} className="product-col my-auto">
             <Button
-              variant="danger"
+              variant="light"
               onClick={() => 
                 removeItem(product)
               

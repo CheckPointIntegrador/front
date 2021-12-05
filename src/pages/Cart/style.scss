@@ -1,6 +1,20 @@
-@import '../../App.scss';
+
+.cart-title{
+    color: var(--green-medium);
+    .btn{
+        font-size: 1.2rem;
+    }
+}
 
 .cart-container{
-    border: solid 1px $brown-light;
+    border: solid 1px var(--brown-light);
     border-radius: 2rem;
+    color: var(--green-medium);
+
+}
+
+.buttons-container{
+    .btn{
+        font-size: 1.2rem;
+    }
 }

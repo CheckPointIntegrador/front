@@ -1,17 +1,15 @@
-@import '../../../App.scss';
-
 .product-row{
+    color: var(--green-medium);
     .product-img{
-        height: 200px;
+        height: 180px;
         width: 200px;
         object-fit: cover;
         border-radius: 0.5rem;
     }
     .product-quantity{
         font-size: 1.5rem;
-        
         .increment-decrement{
-            background-color:  rgba($brown-light, .2);
+            background-color:  rgba(var(--brown-light), .2);
             
             input[type=submit]{
                 border-style: none;
