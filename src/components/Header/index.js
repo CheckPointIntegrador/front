@@ -1,6 +1,8 @@
 import {Navbar, Nav, NavDropdown, Container, Form, FormControl, Button  } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import carrinho from '../../imgs/home/cart4.svg';
 import search from '../../imgs/home/search.svg';
+import CartIcon from './CartIcon';
 import './style.scss';
 
 const Header = () => {
@@ -36,6 +38,7 @@ return (
         </NavDropdown>
         <Nav.Link href="#aboutUs">Sobre nós</Nav.Link>
         <Nav.Link href="#carrinho"><img src={carrinho} alt="carrinho de compras"/></Nav.Link>
+        <Link to={"/cart"}><CartIcon/></Link>
       </Nav>
     </Navbar.Collapse>
     </Container>
