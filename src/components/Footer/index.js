@@ -1,6 +1,7 @@
 /* eslint-disable react/jsx-no-target-blank */
 import './style.scss'
-import { Container, Row, Col, Image } from 'react-bootstrap';
+import { Card, Row, Col } from 'react-bootstrap';
+import { BsGithub } from 'react-icons/bs';
 
 const Footer = () => {
 
@@ -12,23 +13,29 @@ const Footer = () => {
 
     return (
         <footer id="footer">
-           
-                <Row>
-                    <Col>
-                        <div className="contato">
-                            <p>"Em memória de Matilda, a falecidade plantinha de Esther</p>
-                            
-                        </div>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>
-                        <div className="checkpoint">
-                            <p> &copy;Copyright  {generateDateString()} - Checkpoint Integrador</p>
-                        </div>
-                    </Col>
-    </Row>
-            
+
+            <Card >
+                <Card.Body>
+                    <Row>
+                        <Col>
+                            <Card.Text>"Em memória de Matilda, a falecidade plantinha de Esther"</Card.Text>
+                        </Col>
+                        <Col>
+                            <Card.Text className="text-center">
+                                <BsGithub />
+                            </Card.Text>
+                        </Col>
+                        <Col>
+                            <Card.Text >
+                                Sobre nós
+                            </Card.Text>
+                        </Col>
+                    </Row>
+
+                </Card.Body>
+                <Card.Footer className="text-center"> ©Copyright  {generateDateString()} - Checkpoint Integrador</Card.Footer>
+            </Card>
+
         </footer>
     )
 }
