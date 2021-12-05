@@ -6,7 +6,7 @@ const CartItem = (props) =>{
     const {id, title, price, imageUrl, quantity} = props;
     const product = {id, title, price, imageUrl, quantity};
     
-    const {increment, decrement, removeItem, cartItens} = useContext(CartContext);
+    const {increment, decrement, removeItem} = useContext(CartContext);
     
 
     return (

@@ -22,6 +22,14 @@ const data = [
         description: "(Adenium obesum)",
         imageUrl: "https://static3.tcdn.com.br/img/img_prod/350075/muda_de_rosa_do_deserto_evm_117_11913_1_20200110152841.jpg",
         category: "suculentas"
+    },
+    {
+        id: 4,
+        title: "Rosa-do-deserto",
+        price: 45.0,
+        description: "(Adenium obesum)",
+        imageUrl: "https://static3.tcdn.com.br/img/img_prod/350075/muda_de_rosa_do_deserto_evm_117_11913_1_20200110152841.jpg",
+        category: "flores"
     }
 ]
 

@@ -3,6 +3,7 @@ import { Button } from "react-bootstrap"
 import Header from '../../components/Header'
 import { CartContext } from '../../context/CartContext'
 import CartItem from './CartItem'
+import { Helmet } from 'react-helmet';
 
 const Cart = () => {
     const {cartItens, clearCart} = useContext(CartContext)
@@ -19,6 +20,9 @@ const Cart = () => {
         
     return (
       <>
+        <Helmet>
+          <title>Casa das Plantinhas | Carrinho </title>
+        </Helmet>
         <Header />
         {cartItens.map((item) => {
           return <CartItem {...item} key={item.id} />;
