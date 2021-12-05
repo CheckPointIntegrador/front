@@ -11,9 +11,9 @@ const Carrossel = () =>{
   return (
     <section id="carrossel">
       <h2>Produtos em destaque:</h2>
-      <Container className= "container">
+      <Container >
      
-      <Carousel>
+      <Carousel className= "container">
         <Carousel.Item >      
           <Row>
             <Col md={4} sm={6}>

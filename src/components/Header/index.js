@@ -12,7 +12,7 @@ return (
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">
 
-    <Nav className= "justify-content-center">
+    <Nav>
       <Form className="d-flex">
           <FormControl
             type="search"
@@ -25,7 +25,7 @@ return (
         </Form>
       </Nav>
 
-      <Nav className= "d-flex justify-content-end">
+      <Nav>
         <Nav.Link href="#home">Home</Nav.Link>
         <NavDropdown title="Produtos" id="basic-nav-dropdown">
           <NavDropdown.Item href="#action/3.1">Suculentas</NavDropdown.Item>
