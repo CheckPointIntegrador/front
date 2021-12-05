@@ -7,8 +7,6 @@ import { Helmet } from 'react-helmet';
 
 const Cart = () => {
     const {cartItens, clearCart} = useContext(CartContext)
-    
-
     const [cartItensTotal, setCartItensTotal] = useState(0);
     const [cartPriceTotal, setCartPriceTotal] = useState(0);
     useEffect( ()=>{

@@ -2,8 +2,9 @@ import React, {useContext, useCallback, useState, useEffect} from 'react'
 import ProductItem from './ProductItem'
 import { ProductsContext } from '../../context/ProductsContext'
 import Header from '../../components/Header'
-import { useParams, useNavigate } from 'react-router'
+import { useParams, useNavigate} from 'react-router'
 import Swal from 'sweetalert2'
+import { Helmet } from 'react-helmet';
 
 export default function Products() {
     const {products} = useContext(ProductsContext)
@@ -11,6 +12,7 @@ export default function Products() {
     const [categoryProducts, setCategoryProducts] = useState([]);
     const { categoryName } = useParams();
     const navigate = useNavigate();
+    
 
     const getCategoryData = useCallback(async ({ categ }) => {
         //(essa parte é quando for linkar com o botao de pesquisa)
@@ -34,13 +36,16 @@ export default function Products() {
 
     useEffect(() => {
         if (categoryName) {
-        getCategoryData({ categ: categoryName });
-        };
-    }, [getCategoryData, categoryName])
+            getCategoryData({ categ: categoryName });
+        } 
+    }, [ getCategoryData, categoryName, products])
 
 
     return (
         <>
+        <Helmet>
+          <title>Casa das Plantinhas | {categoryName} </title>
+        </Helmet>
         <Header/>
         {categoryProducts.map(item =>{
             return <ProductItem {...item} key={item.id}/>
