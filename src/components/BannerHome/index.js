@@ -1,5 +1,4 @@
 import {Image} from 'react-bootstrap';
-import imageHome from '../../imgs/home/parallaxCortado.jpg';
 import './style.scss';
 
 
@@ -7,8 +6,10 @@ const BannerHome = () => {
 
 return (
     <section id="bannerHome">  
-         
-         <h1> CASA DAS PLANTINHAS</h1>
+      <div className= "text">   
+         <h2> Compre plantinhas sem sair de casa</h2>
+         <h4> Fácil de comprar, fácil de cuidar.</h4>
+      </div>  
     </section>
     )
 }

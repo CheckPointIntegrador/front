@@ -1,16 +1,15 @@
 
 #carrossel h2{
-    padding: 5% 5% 5% 7%;
+    padding: 5%;
     color: var(--green-medium);
 }
 
-.container {
-    padding: 0 0 0 8%;
+#container {
+    //padding: 0 0 0%;
     margin: 0 auto;
     width: 100%;
-} 
+img{
+    border-radius:10px;
+    }
 
-.container .d-block{
-    box-shadow: 10px;
 }
-
