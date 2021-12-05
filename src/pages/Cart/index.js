@@ -1,9 +1,10 @@
 import React, {useContext, useEffect, useState} from 'react'
-import { Button } from "react-bootstrap"
+import { Button, Container } from "react-bootstrap"
 import Header from '../../components/Header'
 import { CartContext } from '../../context/CartContext'
 import CartItem from './CartItem'
 import { Helmet } from 'react-helmet';
+import './style.scss'
 
 const Cart = () => {
     const {cartItens, clearCart} = useContext(CartContext)
@@ -22,20 +23,30 @@ const Cart = () => {
           <title>Casa das Plantinhas | Carrinho </title>
         </Helmet>
         <Header />
-        {cartItens.map((item) => {
-          return <CartItem {...item} key={item.id} />;
-        })}
-        {cartItens.length>0 ? 
-        <Button
-          variant="secondary"
-          onClick={() =>
-              clearCart()
-          }
-        >
-          Remover
-        </Button> : 
-        <div>Seu carrinho está vazio</div>}
-        <div>Itens: {cartItensTotal} Total: {cartPriceTotal}</div>
+        <main>
+          <Container xs={12} sm={10} md={8} className="cart-container">
+            {cartItens.map((item) => {
+              return <CartItem {...item} key={item.id} />;
+            })}
+            {cartItens.length>0 ? 
+              <div>
+                <Button
+                  variant="secondary"
+                  onClick={() =>
+                      clearCart()
+                  }
+                >
+                  Remover
+                </Button> 
+                <div>Itens: {cartItensTotal} Total: {cartPriceTotal}</div>
+              </div>
+              : 
+              <h2 className="m-5 text-center">Seu carrinho está vazio</h2>
+              
+            }
+            
+          </Container>
+        </main>
       </>
     );
 }
