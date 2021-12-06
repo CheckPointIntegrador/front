@@ -1,35 +1,39 @@
-#footer .contato{
-    background-color: var(--green-light);
-}
+#footer {
 
-#footer p{
-    margin-bottom: 0;
-    color: var(--green-dark);
-}
-
-.row {
-    padding: auto;
-}
-.justify-content-center {
-    justify-content: space-between;
-}
-
-.card-footer {
-    background-color: var(--green-dark) !important;
-    color: var(--brown-light);
-}
-
-.card-body {
-    background-color: var(--green-light);
-    padding: 2rem;
-}
-.card-header {
-    background-color: var(--green-light);
-}
-
-img, svg {
-    color: var(--green-dark);
-    width: 2rem;
-    height: 2rem;
+    .contato{
+        background-color: var(--green-light);
+    }
+    p{
+        margin-bottom: 0;
+        color: var(--green-dark);
+    }
+    .row {
+        padding: auto;
+    }
+    .justify-content-center {
+        justify-content: space-between;
+    }
+    .card-footer {
+        background-color: var(--green-dark) !important;
+        color: var(--brown-light);
+    }
+    .card-body {
+        background-color: var(--green-light);
+        padding: 2rem;
+    }
+    .card-header {
+        background-color: var(--green-light);
+    }
     
+    img, svg {
+        color: var(--green-dark);
+        width: 2rem;
+        height: 2rem;
+        
+    }
 }
+
+
+
+
+
