@@ -34,7 +34,7 @@ const Header = () => {
             </NavDropdown>
             <Nav.Link href={"/sobreNos"}>Sobre nós</Nav.Link>
             <Nav.Link href="#footer">Contato</Nav.Link>
-            <Nav.Link href={"/carrinho"}><CartIcon/></Nav.Link>
+            <Nav.Link className= "car" href={"/carrinho"}><CartIcon/></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
