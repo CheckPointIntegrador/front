@@ -1,3 +1,6 @@
+.main-cart{
+    min-height: 80vh;
+}
 
 .cart-title{
     color: var(--green-medium);
@@ -11,7 +14,6 @@
     border: solid 1px var(--brown-light);
     border-radius: 2rem;
     color: var(--green-medium);
-
 }
 
 .cart-title .btn-outline-light,

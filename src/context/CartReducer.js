@@ -1,4 +1,4 @@
-import { EMPTY_CART, INITIAL_STATE } from "./CartContext"
+import { EMPTY_CART } from "./CartContext"
 
 export const ACTION = {
     ADD_ITEM: 'addItem',

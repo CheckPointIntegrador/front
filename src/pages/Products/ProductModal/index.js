@@ -37,7 +37,7 @@ const ProductModal = (props) => {
                 variant="light"
                 onClick={() => {
                   addToCart(product);
-                  navigate("/cart");
+                  navigate("/carrinho");
                 }}
               >
                 Adicionar ao carrinho
@@ -47,7 +47,7 @@ const ProductModal = (props) => {
                 variant="light"
                 onClick={() => {
                   increment(product);
-                  navigate("/cart");
+                  navigate("/carrinho");
                 }}
               >
                 Adicionar mais

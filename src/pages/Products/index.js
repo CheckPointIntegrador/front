@@ -2,7 +2,6 @@ import React, {useContext, useCallback, useState, useEffect} from 'react'
 import { useParams, useNavigate} from 'react-router'
 import Swal from 'sweetalert2'
 import { Helmet } from 'react-helmet';
-import Header from '../../components/Header'
 import ProductItem from './ProductItem'
 import { ProductsContext } from '../../context/ProductsContext'
 
@@ -46,7 +45,6 @@ export default function Products() {
         <Helmet>
           <title>Casa das Plantinhas | {categoryName} </title>
         </Helmet>
-        <Header/>
         {categoryProducts.map(item =>{
             return <ProductItem {...item} key={item.id}/>
         }

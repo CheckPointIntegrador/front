@@ -27,9 +27,8 @@ const Cart = () => {
         <title>Casa das Plantinhas | Carrinho </title>
       </Helmet>
 
-      <Header />
 
-      <main>
+      <main className="main-cart">
         <Container className="cart-title d-flex my-4 justify-content-between">
           <h1>Meu Carrinho</h1>
           {cartItens.length > 0 && (
@@ -73,7 +72,6 @@ const Cart = () => {
           </Container>
         )}
       </main>
-      <Footer/>
     </>
   );
 };
