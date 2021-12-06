@@ -12,7 +12,7 @@ const Header = () => {
       <Container fluid id="container">
         <Navbar.Brand className="nav-brand"><img src={logo2}></img></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse className="basic-navbar-nav">
           <Nav className= "me-auto">
             <Form className="d-flex">
               <FormControl type="search" placeholder="Search" className="me-2" aria-label="Buscar"/>
@@ -25,7 +25,7 @@ const Header = () => {
           <Nav className="d-flex align-items-center">
             <Nav.Link href={"/"}>Home</Nav.Link>
             <Nav.Link href={"/produtos"}>Produtos</Nav.Link>
-            <NavDropdown title= "Categorias" id="basic-nav-dropdown">
+            <NavDropdown title= "Categorias" className="basic-nav-dropdown">
               <NavDropdown.Item href={"/categoria/suculentas"}>Suculentas</NavDropdown.Item>
               <NavDropdown.Item href={"/categoria/cactos"}>Cactos</NavDropdown.Item>
               <NavDropdown.Item href={"/categoria/samambaias"}>Samambaias</NavDropdown.Item>

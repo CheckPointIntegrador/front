@@ -24,7 +24,6 @@ const Carrossel = () =>{
               alt="cacto"
               />
               <h3>Nome da planta aqui</h3>
-              <button>comprar</button>
             </Col>
             <Col md={4} sm={6} className="d-none d-sm-block">
               <img
@@ -33,7 +32,6 @@ const Carrossel = () =>{
               alt="suculenta"
               />
               <h3>Nome da planta aqui</h3>
-              <button>comprar</button>
             </Col>
             <Col md={4} sm={6} className="d-none d-md-block">
               <img
@@ -42,7 +40,6 @@ const Carrossel = () =>{
               alt="samambaia"
               />
               <h3>Nome da planta aqui</h3>
-              <button>comprar</button>
             </Col>
           </Row>
         </Carousel.Item>
@@ -55,7 +52,6 @@ const Carrossel = () =>{
               alt="flor"
               />
               <h3>Nome da planta aqui</h3>
-              <button>comprar</button>
             </Col>
             <Col md={4} sm={6} className="d-none d-sm-block">
               <img
@@ -64,7 +60,6 @@ const Carrossel = () =>{
               alt="utensílios"
               />
               <h3>Nome da planta aqui</h3>
-              <button>comprar</button>
             </Col>
             <Col md={4} sm={6} className="d-none d-md-block">
               <img
@@ -73,7 +68,6 @@ const Carrossel = () =>{
               alt="cacto"
               />
               <h3>Nome da planta aqui</h3>
-              <button>comprar</button>
             </Col>
           </Row>
         </Carousel.Item>
