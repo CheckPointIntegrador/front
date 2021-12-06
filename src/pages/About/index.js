@@ -7,6 +7,7 @@ const About = () => {
   return (
     <>
       <Link to="/">Home</Link>
+      <BannerHome />
       <AboutUs />
     </>
   );
