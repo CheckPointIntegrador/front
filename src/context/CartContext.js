@@ -20,7 +20,6 @@ const CartContextProvider = ({children}) => {
 
     useEffect(() => {
         localStorage.setItem("cartState", JSON.stringify(state));
-        console.log(JSON.parse(localStorage.getItem("cartState")))
       }, [state]);
     
     const contextValues = {
