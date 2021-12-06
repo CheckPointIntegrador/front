@@ -1,4 +1,4 @@
-import { INITIAL_STATE } from "./CartContext"
+import { EMPTY_CART, INITIAL_STATE } from "./CartContext"
 
 export const ACTION = {
     ADD_ITEM: 'addItem',
@@ -39,7 +39,7 @@ const CartReducer = (state, action) =>{
         
         case ACTION.CLEAR:
             return{
-                ...INITIAL_STATE
+                ...EMPTY_CART
             }
             
         default:
