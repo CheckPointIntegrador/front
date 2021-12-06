@@ -1,6 +1,52 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+
+// *********************************************
+// #######   CONFIGURAÇÃO DE PÁGINA   #######
+// *********************************************
+
+body{
+  font-size: 10px;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  
+}
+
+:root{
+  --brown-dark: #A2531E;
+  --brown-light: #DDA15E;
+  --green-dark: #283618;
+  --green-medium: #606C38;
+  --green-light: #81AA66;
+  --bg-2: #F2EFEF;
+}
+
+// *********************************************
+// #######   CONFIGURAÇÃO  GRID  #######
+// *********************************************
+.cards {
+  display: grid;
+  display: -ms-grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  -ms-grid-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  grid-gap: 3rem;
+  max-width: 1020px;
+  margin: 0 auto 3rem;
+}
+
+article {
+  position: relative;
+}
+
+.caixa {
+  height: 60rem;
+}
+
 // *********************************************
 // #######   CONFIGURAÇÃO DA IMAGEM DO PERFIL   #######
 // *********************************************
