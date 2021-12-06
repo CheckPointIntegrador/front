@@ -1,16 +1,18 @@
+/* eslint-disable jsx-a11y/alt-text */
 import {Navbar, Nav, NavDropdown, Container, Form, FormControl, Button} from "react-bootstrap";
 import { Link } from "react-router-dom";
 import CartIcon from "./CartIcon"
 import carrinho from "../../imgs/home/cart4.svg";
 import search from "../../imgs/home/search.svg";
 import "./style.scss";
+import logo2 from '../../imgs/logo2.png'
 
 const Header = () => {
   return (
-   
+   <section id="header">
     <Navbar bg="light" expand="lg">
       <Container fluid id="container">
-        <Navbar.Brand className="nav-brand">Casa das Plantinhas</Navbar.Brand>
+        <Navbar.Brand className="nav-brand"><img src={logo2}></img></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className= "me-auto">
@@ -39,7 +41,7 @@ const Header = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-    
+    </section>
   );
 };
 
