@@ -1,0 +1,15 @@
+.cart-icon-container{
+    position: relative;
+    .cart-count {
+        position: absolute;
+        text-decoration: none;
+        color: #000;
+        background-color: var(--green-light);
+        height: 1.2rem;
+        width: 1.2rem;
+        font-size: 0.85rem;
+        font-weight: 500;
+        right:-4px;
+        top:-4px;
+    }
+}

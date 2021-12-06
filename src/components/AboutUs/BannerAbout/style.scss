@@ -1,0 +1,27 @@
+
+#bannerAbout {
+    width: 100%;
+    height: calc(100vh - 81px);
+    background-image: url("../../../imgs/sobrenos/banner-sobrenos.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transform: scale(1.05);
+    //margin-top:1%;
+  }
+  
+  .text-banner-about{
+    text-align:center;
+    width:45%;
+    
+    
+    h2{
+      color: var(--green-dark);
+      padding: 60% 0 0 15%;
+      font-size: 5rem;
+      text-transform: uppercase;
+      
+    }
+  
+  }

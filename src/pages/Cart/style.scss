@@ -3,6 +3,7 @@
     color: var(--green-medium);
     .btn{
         font-size: 1.2rem;
+        border-radius: 10px;
     }
 }
 
@@ -13,8 +14,23 @@
 
 }
 
+.cart-title .btn-outline-light,
+.buttons-container .btn-outline-light{
+    color: var(--green-dark);
+    border-color: var(--green-dark);
+}
+
 .buttons-container{
     .btn{
-        font-size: 1.2rem;
+        font-size: 1.4rem;
+        border-radius: 10px;
+        min-width: 170px;
     }
+
+    .btn-light{
+        color: var(--bg-2);
+        background-color: var(--green-dark);
+    }
+    
+    
 }

@@ -1,10 +1,10 @@
 import React, {useContext, useCallback, useState, useEffect} from 'react'
-import ProductItem from './ProductItem'
-import { ProductsContext } from '../../context/ProductsContext'
-import Header from '../../components/Header'
 import { useParams, useNavigate} from 'react-router'
 import Swal from 'sweetalert2'
 import { Helmet } from 'react-helmet';
+import Header from '../../components/Header'
+import ProductItem from './ProductItem'
+import { ProductsContext } from '../../context/ProductsContext'
 
 export default function Products() {
     const {products} = useContext(ProductsContext)
@@ -52,6 +52,7 @@ export default function Products() {
         }
             
         )}
+        
         </>
     )
 }
