@@ -26,9 +26,11 @@ body{
 // *********************************************
 .cards {
   display: grid;
+  display: -ms-grid;
   grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  -ms-grid-columns: repeat(auto-fill, minmax(25rem, 1fr));
   grid-gap: 3rem;
-  max-width: 960px;
+  max-width: 1020px;
   margin: 0 auto 3rem;
 }
 
@@ -39,22 +41,6 @@ article {
 .caixa {
   height: 60rem;
 }
-
-// .wrapper {
-//   display: grid;
-//   display: -ms-grid;
-//   grid-template-columns: repeat(3, 1fr);
-//   -ms-grid-columns: repeat(3, 1fr);
-//   grid-column-gap: 10rem;
-//   grid-row-gap: 5rem;
-//   // grid-auto-rows: minmax(25rem, auto);
-
-//   margin: 0 auto;
-
-//   text-align: center;
-//   align-items: center;
-// }
-
 
 
 // *********************************************
@@ -148,8 +134,6 @@ article {
 
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
   .cards {
-    // min-width: 560px;
-    // max-width: 1024px;
     grid-gap: 3rem;
     margin: 0 auto 3rem;
   }
