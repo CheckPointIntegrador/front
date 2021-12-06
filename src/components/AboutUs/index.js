@@ -2,7 +2,7 @@
 import { Component } from 'react';
 import './style.scss';
 import '../../App.scss'
-import DataAbout from './DataAboutUs';
+
 
 import Aline    from "../../imgs/sobrenos/Aline.jpg";
 import Esther   from "../../imgs/sobrenos/Esther.jpeg";
