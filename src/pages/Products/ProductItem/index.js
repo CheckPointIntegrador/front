@@ -1,11 +1,12 @@
 import { useContext } from "react"
 import { Button } from "react-bootstrap"
 import { CartContext } from "../../../context/CartContext"
+import ProductModal from '../ProductModal'
 import './style.scss'
 
 const ProductItem = (props) =>{
     const {id, title, price, description, imageUrl, category} = props;
-    const product = { id, title, price, description, imageUrl, category};
+    const product = {id, title, price, description, imageUrl, category};
     
     const {addToCart, increment, cartItens} = useContext(CartContext);
     
@@ -37,6 +38,7 @@ const ProductItem = (props) =>{
             AddMore
           </Button>
         )}
+        <ProductModal {...product}/>
       </div>
     );
            
