@@ -1,24 +1,19 @@
 #header{
 #container {
-  background-color: white !important;
+    background-color: white !important;
 
-  .nav-brand {
-    padding-left: 2%;
-    text-decoration: none !important;
-  }
+    .nav-brand {
+        padding-left: 2%;
+        text-decoration: none !important;
+    }
 
-  .nav-brand img {
-    width: 10rem;
-    height: 10rem;
-  }
+    .nav-brand img {
+        width: 10rem;
+        height: 10rem;
+    }
 
-  .basic-navbar-nav .me-auto {
-    padding-left: 4%;
-  }
-
-    .form-control{
-        min-width: 80vh;
-        line-height:2.5rem;
+    .basic-navbar-nav .me-auto {
+        padding-left: 4%;
     }
 
     .basic-navbar-nav .align-items-center{
@@ -40,12 +35,10 @@
         color: var(--green-light);
     }
 
-    
-
-  .dropdown-item {
+    .dropdown-item {
     &:active {
-      background-color: transparent;
+        background-color: transparent;
     }
-  }
+    }
 }
 }
