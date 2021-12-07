@@ -23,7 +23,7 @@ const Carrossel = () =>{
               src= {cacto02} width= "80%" height= "80%"
               alt="cacto"
               />
-              <h3>Nome da planta aqui</h3>
+              <h5>Opuntia Microdasys subsp. Albata</h5>
             </Col>
             <Col md={4} sm={6} className="d-none d-sm-block">
               <img
@@ -31,7 +31,7 @@ const Carrossel = () =>{
               src= {suculenta1} width= "80%" height= "80%"
               alt="suculenta"
               />
-              <h3>Nome da planta aqui</h3>
+              <h5>Suculenta Haworthia Fasciata</h5>
             </Col>
             <Col md={4} sm={6} className="d-none d-md-block">
               <img
@@ -39,7 +39,7 @@ const Carrossel = () =>{
               src= {samambaia} width= "80%" height= "80%"
               alt="samambaia"
               />
-              <h3>Nome da planta aqui</h3>
+              <h5>Samambaia Americana</h5>
             </Col>
           </Row>
         </Carousel.Item>
@@ -51,7 +51,7 @@ const Carrossel = () =>{
               src= {flor04} width= "80%" height= "80%"
               alt="flor"
               />
-              <h3>Nome da planta aqui</h3>
+              <h5>Hortênsia</h5>
             </Col>
             <Col md={4} sm={6} className="d-none d-sm-block">
               <img
@@ -59,7 +59,7 @@ const Carrossel = () =>{
               src= {designSemNome2} width= "80%" height= "80%"
               alt="utensílios"
               />
-              <h3>Nome da planta aqui</h3>
+              <h5>Utensílios de Jardinagem 4PÇS</h5>
             </Col>
             <Col md={4} sm={6} className="d-none d-md-block">
               <img
@@ -67,7 +67,7 @@ const Carrossel = () =>{
               src= {suculenta2} width= "80%" height= "80%"
               alt="cacto"
               />
-              <h3>Nome da planta aqui</h3>
+              <h5>Suculenta Haworthia Limifolia</h5>
             </Col>
           </Row>
         </Carousel.Item>
