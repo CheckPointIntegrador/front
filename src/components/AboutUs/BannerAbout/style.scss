@@ -1,8 +1,6 @@
 
-
-
 #bannerAbout {
-  width: 100%;
+  width: 97.5%;
   height: calc(100vh - 81px);
   background-image: url("../../../imgs/sobrenos/banner-sobrenos.jpg");
   background-size: cover;
@@ -30,8 +28,8 @@
 
 @media (max-width: 600px) {
   #bannerAbout {
-    max-width: 100%;
-    margin: 0 auto 3rem;
+    max-width: 600px;
+    margin: 0 auto;
   }
 
 
@@ -39,7 +37,7 @@
 
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
   #bannerAbout {
-    max-width:100%;
+    max-width:1000px;
     margin: 0 auto 3rem;
   }
 }

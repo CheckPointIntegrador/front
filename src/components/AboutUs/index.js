@@ -71,7 +71,7 @@ const AboutUs = () => {
                             <div className=" retangle">
                                 <div className="col-lg-6 col-xm-12 aboutme">
                                     <h4 className="profile-name">Giselle Piasetzki</h4>
-                                    <h5 className="profile-social"><a href="">LinkedIn</a></h5>
+                                    <h5 className="profile-social"><a href="https://www.linkedin.com/in/gisellepiasetzki/">LinkedIn</a></h5>
                                     <h5 className="profile-social"><a href="https://github.com/GisellePiasetzki">GitHub</a></h5>
                                 </div>
                             </div>
@@ -105,7 +105,7 @@ const AboutUs = () => {
                             <div className=" retangle">
                                 <div className="col-lg-6 col-xm-12 aboutme">
                                     <h4 className="profile-name">Silas Medeiros</h4>
-                                    <h5 className="profile-social"><a href="">LinkedIn</a></h5>
+                                    <h5 className="profile-social"><a href="https://www.linkedin.com/in/silas-medeiros-6b44a0213/">LinkedIn</a></h5>
                                     <h5 className="profile-social"><a href="https://github.com/silasms">GitHub</a></h5>
                                 </div>
                             </div>
