@@ -17,20 +17,22 @@ const Footer = () => {
             <Card >
                 <Card.Body>
                     <Row>
-                        <Col>
+                        <Col md={{span:4}} sm={{span:3}}>
                             <Card.Text>"Em memória de Matilda, a falecidade plantinha de Esther"</Card.Text>
                         </Col>
-                        <Col>
+                        <Col md={{span:4}} sm={{span:6}}>
                             <Card.Text className="text-center">
                                 <BsGithub />
                             </Card.Text>
                         </Col>
-                        <Col>
-                            <Card.Text >
+                        <Col md={{span:2, offset:2}} sm={{span:3}}>
+                            <Card.Text className="text-right" >
                                 Sobre nós
                             </Card.Text>
                         </Col>
+                        
                     </Row>
+                    
 
                 </Card.Body>
                 <Card.Footer className="text-center"> ©Copyright  {generateDateString()} - Checkpoint Integrador</Card.Footer>
