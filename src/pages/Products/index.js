@@ -1,7 +1,7 @@
 import React, {useContext, useCallback, useState, useEffect} from 'react'
 import { useParams, useNavigate} from 'react-router'
 import Swal from 'sweetalert2'
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import ProductItem from './ProductItem'
 import { ProductsContext } from '../../context/ProductsContext'
 import './style.scss'

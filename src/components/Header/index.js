@@ -9,6 +9,7 @@ import {
   Button,
 } from "react-bootstrap";
 import CartIcon from "./CartIcon";
+import { Link } from "react-router-dom";
 import search from "../../imgs/home/search.svg";
 import "./style.scss";
 import logo2 from "../../imgs/logo2.png";
@@ -41,30 +42,30 @@ const Header = () => {
             </Nav>
 
             <Nav className="d-flex align-items-center">
-              <Nav.Link href={"/"}>Home</Nav.Link>
-              <Nav.Link href={"/produtos"}>Produtos</Nav.Link>
+              <Nav.Link as={Link} to={"/"}>Home</Nav.Link>
+              <Nav.Link as={Link} to={"/produtos"}>Produtos</Nav.Link>
               <NavDropdown title="Categorias" className="basic-nav-dropdown">
-                <NavDropdown.Item href={"/categoria/suculentas"}>
+                <NavDropdown.Item as={Link} to={"/categoria/suculentas"}>
                   Suculentas
                 </NavDropdown.Item>
-                <NavDropdown.Item href={"/categoria/cactos"}>
+                <NavDropdown.Item as={Link} to={"/categoria/cactos"}>
                   Cactos
                 </NavDropdown.Item>
-                <NavDropdown.Item href={"/categoria/samambaias"}>
+                <NavDropdown.Item as={Link} to={"/categoria/samambaias"}>
                   Samambaias
                 </NavDropdown.Item>
-                <NavDropdown.Item href={"/categoria/flores"}>
+                <NavDropdown.Item as={Link} to={"/categoria/flores"}>
                   Flores
                 </NavDropdown.Item>
-                <NavDropdown.Item href={"/categoria/jardinagem"}>
+                <NavDropdown.Item as={Link} to={"/categoria/jardinagem"}>
                   Jardinagem
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link style={{ whiteSpace: "nowrap" }} href={"/sobreNos"}>
+              <Nav.Link style={{ whiteSpace: "nowrap" }} as={Link} to={"/sobreNos"}>
                 Sobre nós
               </Nav.Link>
               <Nav.Link href="#footer">Contato</Nav.Link>
-              <Nav.Link className="car" href={"/carrinho"}>
+              <Nav.Link className="car" as={Link} to={"/carrinho"}>
                 <CartIcon />
               </Nav.Link>
             </Nav>

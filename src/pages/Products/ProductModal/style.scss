@@ -1,4 +1,10 @@
 .modal{
+    color: var(--green-dark);
+
+    .modal-title{
+        font-size: 2.2rem;
+    }
+    
     img{
         height: 200px;
         width: 200px;
@@ -12,6 +18,20 @@
         color: var(--green-medium);
     }
     
+
+    .info-price{
+        font-size: 2rem;
+        font-weight: 800;
+    }
+
+    .info-description{
+        font-size: 1.3rem;
+    }
     
-    
+}
+
+.btn{
+    svg{
+        fill:gray;
+    }
 }

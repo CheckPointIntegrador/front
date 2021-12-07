@@ -2,7 +2,7 @@ import React, {useContext, useEffect, useState} from 'react'
 import { Button, Container, Row, Col } from "react-bootstrap"
 import { useNavigate } from 'react-router'
 import { CartContext } from '../../context/CartContext'
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
 import './style.scss'
 import CartItem from './CartItem'
 import StyledButton from '../../components/StyledButton';

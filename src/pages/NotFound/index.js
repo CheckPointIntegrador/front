@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import './style.scss';
 import plant from '../../imgs/notFound/planta-esther.png'
 import { Container } from 'react-bootstrap';
-
+import { Helmet } from 'react-helmet-async';
 
 const NotFound = () => {
   const navigate = useNavigate();
@@ -13,6 +13,9 @@ const NotFound = () => {
 
   return (
     <>
+    <Helmet>
+        <title>Casa das Plantinhas | Not Found</title>
+    </Helmet>
     <Container xs={12} sm={8} className="not-found d-flex flex-wrap justify-content-center">
       <div className="m-auto px-4">
         <h1 className="py-2">404</h1>
