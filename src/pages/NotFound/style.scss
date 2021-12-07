@@ -1,0 +1,36 @@
+.not-found{
+    color: var(--green-dark);
+
+    h1{
+        font-weight: 800;
+        font-size: 10rem;
+    }
+    h2{
+        font-weight: 800;
+        font-size: 2.5rem;
+    }
+    p{
+        font-size: 2rem;
+    }
+
+}
+
+.planta-carnivora {
+    opacity: 0;
+    animation: fade 6s linear;
+    height: 400px;
+}
+
+
+@keyframes fade {
+    100% { opacity: 0 }
+    0% { opacity: 1 }
+}
+
+@media (min-width: 700px) {
+  .not-found{
+    .planta-carnivora {
+        height: 600px;
+    }
+  }  
+}
