@@ -1,6 +1,4 @@
-#container{
-    background-color: white !important;
-    
+#header{
 
     .nav-brand{
         padding-left:2%;
@@ -16,23 +14,33 @@
         padding-left: 4%;
     }
 
+    .form-control{
+        min-width: 80vh;
+        line-height:2.5rem;
+    }
+
     .basic-navbar-nav .align-items-center{
-        font-size:2rem; 
+        font-size:1.7rem; 
     }     
+
+    .nav-link{
+        justify-content: space-between;
+        padding:15px;
+        color: var(--green-light);
+    }
+
     .basic-nav-dropdown .dropdown-menu{
         font-size:1.5rem;
         padding: 15px;
     }
     
-    .dropdown-menu a{
+    .dropdown-menu>a{
         color: var(--green-light);
     }
 
-    .nav-link{
-        justify-content: space-between;
-        //background-color: blue;
-        padding:15px;
-        color: var(--green-light);
+    .dropdown-item > a {
+        text-decoration: none !important;
+        color: inherit;
     }
 }
 

@@ -8,8 +8,8 @@ import logo2 from '../../imgs/logo2.png'
 const Header = () => {
   return (
    <section id="header">
-    <Navbar bg="light" expand="lg">
-      <Container fluid id="container">
+    <Navbar expand="lg">
+      <Container fluid >
         <Navbar.Brand className="nav-brand"><img src={logo2}></img></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse className="basic-navbar-nav">
@@ -34,7 +34,7 @@ const Header = () => {
             </NavDropdown>
             <Nav.Link href={"/sobreNos"}>Sobre nós</Nav.Link>
             <Nav.Link href="#footer">Contato</Nav.Link>
-            <Nav.Link className= "car" href={"/carrinho"}><CartIcon/></Nav.Link>
+            <Nav.Link href={"/carrinho"}><CartIcon/></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

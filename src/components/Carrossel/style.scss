@@ -1,15 +1,21 @@
-
 #carrossel h2{
     padding: 5%;
     color: var(--green-medium);
 }
 
 #container {
-    //padding: 0 0 0%;
     margin: 0 auto;
     width: 100%;
     img{
         border-radius:10px;
-        }
+       
+    }
 
+    .d-block h3{
+        margin: 20%;
+    }
+    .carousel-indicators .data-bs-target{
+        text-decoration: none;
+        color: var(--green-medium);
+    }
 }
