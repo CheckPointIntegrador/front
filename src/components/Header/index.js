@@ -16,7 +16,7 @@ const Header = () => {
           <Nav className= "me-auto">
             <Form className="d-flex">
               <FormControl type="search" placeholder="Search" className="me-2" aria-label="Buscar"/>
-              <Button variant="outline-success">
+              <Button variant="outline-light">
                 <img src={search} alt="search" />
               </Button>
             </Form>

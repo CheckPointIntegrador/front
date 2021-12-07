@@ -4,6 +4,7 @@ import Swal from 'sweetalert2'
 import { Helmet } from 'react-helmet';
 import ProductItem from './ProductItem'
 import { ProductsContext } from '../../context/ProductsContext'
+import './style.scss'
 
 export default function Products() {
     const {products} = useContext(ProductsContext)
@@ -45,12 +46,16 @@ export default function Products() {
         <Helmet>
           <title>Casa das Plantinhas | {categoryName} </title>
         </Helmet>
-        {categoryProducts.map(item =>{
-            return <ProductItem {...item} key={item.id}/>
-        }
-            
-        )}
+        <main>
+            {categoryProducts.map(item =>{
+                return <ProductItem {...item} key={item.id}/>
+            }
+                
+            )}
         
+
+        
+        </main>
         </>
     )
 }

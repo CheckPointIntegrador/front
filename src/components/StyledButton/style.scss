@@ -1,0 +1,46 @@
+
+html{    //definição das cores de botões
+    .btn-success,
+    .btn-outline-success,
+    .btn-secondary{
+        font-size: 1.4rem;
+        border-radius: 10px;
+        min-width: 170px;
+    }
+    
+    .btn-outline-success, 
+    .btn-outline-success:focus{    
+        color: var(--green-dark);
+        border-color: var(--green-dark);
+        &:hover{
+            background-color: rgba(#283618,0.9);
+            color: var(--bg-2);
+            border-color: none;
+        }
+    }
+    
+    .btn-success, 
+    .btn-success:focus{
+        color: var(--bg-2);
+        background-color: var(--green-dark);
+        &:hover{
+            background-color: rgba(#283618,0.9);
+            color: var(--bg-2);
+            border-color: none;
+        }
+    }
+    
+    .btn-secondary, 
+    .btn-secondary:focus{
+        color: white;
+        background-color: var(--brown-dark);
+        border: none;
+        &:hover{
+            background-color: rgba(#A2531E,0.9);
+            color: var(--bg-2);
+            border-color: none;
+        }
+        
+    }
+
+}

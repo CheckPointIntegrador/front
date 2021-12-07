@@ -3,6 +3,7 @@ import { useState, useContext } from "react";
 import './style.scss'
 import { CartContext } from "../../../context/CartContext";
 import { useNavigate } from "react-router";
+import StyledButton from "../../../components/StyledButton";
 
 const ProductModal = (props) => {
   const { id, title, price, description, imageUrl, category } = props;
@@ -28,31 +29,34 @@ const ProductModal = (props) => {
           <Modal.Title id="contained-modal-title-vcenter">{title}</Modal.Title>
         </Modal.Header>
         <Modal.Body className="d-flex">
-          <img src={imageUrl} alt={title} />
+          <img className="m-4" src={imageUrl} alt={title} />
           <div className="info-text">
             <div className="info-price">R$ {price.toFixed(2)}</div>
             <div className="info-description">{description}</div>
             {!itemInCart ? (
-              <Button
-                variant="light"
-                onClick={() => {
-                  addToCart(product);
-                  navigate("/carrinho");
-                }}
-              >
-                Adicionar ao carrinho
-              </Button>
+              <StyledButton
+                type="success"
+                action={addToCart}
+                product={product}
+                text="Adicionar ao carrinho"
+                paddindMargin="mx-2 p-4"
+              />
             ) : (
-              <Button
-                variant="light"
-                onClick={() => {
-                  increment(product);
-                  navigate("/carrinho");
-                }}
-              >
-                Adicionar mais
-              </Button>
+              <StyledButton
+                type="secondary"
+                action={increment}
+                product={product}
+                text="Adicionar mais"
+                paddindMargin="mx-2 p-4"
+              />
             )}
+            <StyledButton
+              type="outline-success"
+              action={navigate}
+              product="/produtos"
+              text="Continuar Comprando"
+              paddindMargin="mx-2 p-4"
+            />
           </div>
         </Modal.Body>
       </Modal>
