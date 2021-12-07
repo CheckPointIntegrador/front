@@ -4,9 +4,8 @@ import { useNavigate } from 'react-router'
 import { CartContext } from '../../context/CartContext'
 import { Helmet } from 'react-helmet';
 import './style.scss'
-import Header from '../../components/Header'
 import CartItem from './CartItem'
-import Footer from '../../components/Footer'
+import StyledButton from '../../components/StyledButton';
 
 const Cart = () => {
   const { cartItens, clearCart } = useContext(CartContext);
@@ -32,9 +31,13 @@ const Cart = () => {
         <Container className="cart-title d-flex my-4 justify-content-between">
           <h1>Meu Carrinho</h1>
           {cartItens.length > 0 && (
-            <Button variant="outline-light" onClick={() => clearCart()}>
-              Limpar Carrinho
-            </Button>
+            <StyledButton
+            type="outline-success"
+            action={clearCart}
+            
+            text="Limpar Carrinho"
+            paddindMargin="mx-2 p-2"
+          />
           )}
         </Container>
 
@@ -55,20 +58,23 @@ const Cart = () => {
 
         {cartItens.length > 0 && (
           <Container className="buttons-container my-5 d-flex justify-content-end">
-            <Button
-              className="mx-2 p-4"
-              variant="outline-light"
-              onClick={() => navigate("/")}
-            >
-              Continuar Comprando
-            </Button>
-            <Button
-              className="mx-2 p-4"
-              variant="light"
-              onClick={() => console.log("finalizou")}
-            >
-              Finalizar Compra
-            </Button>
+                       
+            <StyledButton
+                type="outline-success"
+                action={navigate}
+                product="/"
+                text="Continuar Comprando"
+                paddindMargin="mx-2 p-4"
+              />
+
+            <StyledButton
+                type="success"
+                action={console.log}
+                product=""
+                text="Finalizar Compra"
+                paddindMargin="mx-2 p-4"
+              />
+
           </Container>
         )}
       </main>
