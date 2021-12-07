@@ -1,6 +1,6 @@
 #bannerHome {
   width: 97.5%;
-  //height: 70vh;
+  height: 70vh;
   background-image: url("../../imgs/home/parallax.jpeg");
   background-size: cover;
   background-attachment: fixed;
@@ -8,18 +8,17 @@
   background-position: center center;
   transform: scale(1.05);
 
+  .text {
+    text-align: center;
+    width: 45%;
 
-  .text{
-    text-align:center;
-    width:45%;
-    
-    h2{
+    h2 {
       color: var(--brown-dark);
       padding: 20% 0 0 15%;
       font-size: 5rem;
     }
 
-    h4{
+    h4 {
       color: var(--green-dark);
       padding: 5% 0 0 15%;
       font-size: 2.5rem;
@@ -27,19 +26,17 @@
   }
 }
 
-
-
 @media (max-width: 600px) {
-  #bannerHome{
+  #bannerHome {
     .text {
       max-width: 560px;
-    
-      h2{
+
+      h2 {
         padding: 20% 0 0 10%;
         font-size: 3.5rem;
       }
-    
-      h4{
+
+      h4 {
         padding: 5% 0 0 10%;
         font-size: 1.5rem;
       }
@@ -48,16 +45,16 @@
 }
 
 @media (max-height: 600px) {
-  #bannerHome{
+  #bannerHome {
     .text {
       max-height: 560px;
-    
-      h2{
+
+      h2 {
         padding: 10% 0 0 10%;
         font-size: 3.5rem;
       }
-    
-      h4{
+
+      h4 {
         padding: 5% 0 0 10%;
         font-size: 1.5rem;
       }
@@ -66,15 +63,14 @@
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
-  #bannerHome{
+  #bannerHome {
     .text {
-    
-      h2{
+      h2 {
         padding: 20% 0 0 10%;
         font-size: 3.5rem;
       }
-    
-      h4{
+
+      h4 {
         padding: 5% 0 0 10%;
         font-size: 1.5rem;
       }
@@ -83,10 +79,9 @@
 }
 
 @media only screen and (min-height: 600px) and (max-height: 1024px) {
-  #bannerHome{
+  #bannerHome {
     .text {
-    
-      h2{
+      h2 {
         padding: 15% 0 0 10%;
         font-size: 3.5rem;
       }
@@ -95,16 +90,16 @@
 }
 
 @media (min-aspect-ratio: 1025px) {
-  #bannerHome{
+  #bannerHome {
     .text {
       min-width: 1500px;
-    
-      h2{
+
+      h2 {
         padding: 20% 0 0 10%;
         font-size: 3.5rem;
       }
-    
-      h4{
+
+      h4 {
         padding: 5% 0 0 10%;
         font-size: 1.5rem;
       }
