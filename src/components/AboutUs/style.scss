@@ -95,12 +95,16 @@ article {
   height: 35rem;
   background: #DDA15E42;
   border-radius: 5rem;
+  text-align: center;
+  align-items: center;
 }
 
-.aboutme{
+.aboutme {
   margin: 0 auto;
   padding-top: 25rem;
+  width: 25rem;
   text-align: center;
+  align-items: center;
 
   font-family: 'Roboto Condensed', sans-serif;
   font-style: normal;
@@ -108,22 +112,24 @@ article {
   text-decoration:none;
 }
 
-.profile-name h4{
-  color: var(--brown-dark);
-  
+.profile-name {
+  color: var(--brown-dark); 
+  margin-bottom: 2rem;
+  width: 13rem;
   font-family: 'Roboto Condensed', sans-serif;
-  font-style: normal;
+  font-style: none;
   font-weight: normal;
-  font-size: 4rem;
-  line-height: 5rem;
+  font-size: 2rem;
+  line-height: 2rem;
 }
 
-.profile-social h5{
+.profile-social a{
   color: var(--green-medium);
   font-family: 'Roboto Condensed', sans-serif;
-  font-style: normal;
+  font-style: none;
   font-weight: normal;
-  line-height: 5rem;
+  line-height: 1.5rem;
+  font-size: 2rem;
   text-decoration:none;
 }
 
@@ -146,7 +152,13 @@ article {
   }
 
   .text-about{
-    width: 40rem;
+    width: 35rem;
+  }
+
+  .profile-name,
+  .profile-social{
+    margin: 0 auto ;
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -156,19 +168,32 @@ article {
     margin: 0 auto 3rem;
   }
 
+  .text-about{
+    width: 40rem;
+  }
+
   .retangle{
-    margin: 0 auto 3rem;
+    margin: 0 3.5rem 3rem;
+    width: 25rem;
   }
   .profile-img{
-    margin: 0 auto 3rem;
+    margin: 0 3.5rem 3rem;
     grid-gap: 3rem;
   }
   .aboutme{
     text-align: center;
+    width: 25rem;
   }
+
+  .profile-name,
+  .profile-social{
+    margin: 0 auto ;
+    margin-bottom: 1.5rem;
+  }
+  
 }
 
-@media (min-aspect-ratio: 1024px) {
+@media (min-aspect-ratio: 1025px) {
   .cards {
     min-width: 1500px;
     grid-gap: 5rem;
@@ -177,6 +202,7 @@ article {
 
   .retangle{
     margin: 0 auto 5rem;
+    width: 25rem;
   }
   .profile-img{
     margin: 0 auto 5rem;
@@ -184,11 +210,13 @@ article {
   }
   .aboutme{
     text-align: center;
+    width: 25rem;
     margin: 0 auto;
   }
+  .profile-name
   .profile-social{
     text-align: center;
+    width: 25rem;
     text-decoration:none;
-
   }
 }
