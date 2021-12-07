@@ -24,7 +24,10 @@ const Header = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse className="basic-navbar-nav">
             <Nav style={{ width: "100%" }}>
-              <Form className="d-flex" style={{ width: "100%" }}>
+              <Form
+                className="d-flex"
+                style={{ width: "100%", maxWidth: "500px" }}
+              >
                 <FormControl
                   type="search"
                   placeholder="Search"
