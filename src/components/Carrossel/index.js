@@ -14,7 +14,7 @@ const Carrossel = () =>{
       <h2>Produtos em destaque:</h2>
 
        <Carousel variant="dark" id= "destaques">
-        <Carousel.Item className="teste">      
+        <Carousel.Item>      
           <Row >
             <Col md={4} sm={6} className="mx-auto">
               <img
