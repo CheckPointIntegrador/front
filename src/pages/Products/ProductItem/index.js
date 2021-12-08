@@ -20,16 +20,26 @@ const ProductItem = (props) =>{
         <h4>{product.price}</h4>
         <img src={product.imageUrl} alt={product.title} />
         {!itemInCart && (
-          <StyledButton type='success' action={addToCart} product={product} text='Adicionar ao carrinho' paddindMargin="mx-2 p-4"/>
+          <StyledButton
+            type="success"
+            action={addToCart}
+            product={product}
+            text="Adicionar ao carrinho"
+            paddindMargin="mx-2 p-4"
+            modal={true}
+          />
         )}
-        { itemInCart && (
-          <StyledButton type='secondary' action={increment} product={product} text='Adicionar mais' paddindMargin="mx-2 p-4"/>
+        {itemInCart && (
+          <StyledButton
+            type="secondary"
+            action={increment}
+            product={product}
+            text="Adicionar mais"
+            paddindMargin="mx-2 p-4"
+            modal={true}
+          />
         )}
-        <ProductModal {...product}/>
-
-        
-
-
+        <ProductModal {...product} />
       </div>
     );
            

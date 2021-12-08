@@ -1,5 +1,5 @@
 import React, {useContext, useEffect, useState} from 'react'
-import { Button, Container, Row, Col } from "react-bootstrap"
+import { Container, Row, Col } from "react-bootstrap"
 import { useNavigate } from 'react-router'
 import { CartContext } from '../../context/CartContext'
 import { Helmet } from 'react-helmet-async';

@@ -15,18 +15,18 @@ const CartItem = (props) => {
   });
   return (
     <Row className="product-row m-5" key={id}>
-      <Col xs="auto" className="product-col my-auto">
+      <Col xs="auto"  className="product-col my-auto">
         <img
           className="product-img"
           src={product.imageUrl}
           alt={product.title}
         />
       </Col>
-      <Col className="product-col my-auto">
+      <Col xs="auto" sm={2} className="product-col my-auto p-4">
         <h3>{product.title}</h3>
       </Col>
-      <Col className="product-col my-auto">
-        <div className="product-quantity d-flex justify-content-center">
+      <Col sm={2} className="product-col my-auto">
+        <div className="product-quantity d-flex my-4">
           <label className="p-4" for="quantity">
             Quantidade:
           </label>

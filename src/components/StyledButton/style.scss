@@ -1,5 +1,21 @@
 
 html{    //definição das cores de botões
+    .swal2-popup{
+        // grid-template-columns: auto auto;
+        // img{position: absolute;}
+    }
+    
+    .swal2-confirm{
+        border: none;
+        padding: 10px;
+    }
+
+    .swal2-image{
+        object-fit: cover;
+        border-radius: 1rem;
+    }
+
+    .swal2-confirm,
     .btn-success,
     .btn-outline-success,
     .btn-secondary{
@@ -7,6 +23,7 @@ html{    //definição das cores de botões
         border-radius: 10px;
         min-width: 170px;
     }
+    
     
     .btn-outline-success, 
     .btn-outline-success:focus{    
@@ -19,6 +36,7 @@ html{    //definição das cores de botões
         }
     }
     
+    .swal2-confirm,
     .btn-success, 
     .btn-success:focus{
         color: var(--bg-2);
