@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <section id="header">
       <Navbar bg="light" expand="lg">
-        <Container fluid id="container">
+        <Container fluid id="home">
           <Navbar.Brand className="nav-brand">
             <img src={logo2}></img>
           </Navbar.Brand>
@@ -31,12 +31,12 @@ const Header = () => {
               >
                 <FormControl
                   type="search"
-                  placeholder="Search"
+                  placeholder="Buscar"
                   className="me-2"
                   aria-label="Buscar"
                 />
                 <Button variant="outline-light">
-                  <img src={search} alt="search" />
+                  <img className= "button" src={search} alt="search" />
                 </Button>
               </Form>
             </Nav>

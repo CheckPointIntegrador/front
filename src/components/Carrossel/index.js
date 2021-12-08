@@ -14,7 +14,7 @@ const Carrossel = () =>{
       <h2>Produtos em destaque:</h2>
 
       <Container >
-       <Carousel variant="dark" id= "container">
+       <Carousel variant="null" id= "destaques">
         <Carousel.Item >      
           <Row>
             <Col md={4} sm={6}>
@@ -53,14 +53,6 @@ const Carrossel = () =>{
               />
               <h5>Hortênsia</h5>
             </Col>
-            <Col md={4} sm={6} className="d-none d-sm-block">
-              <img
-              className="d-block"
-              src= {designSemNome2} width= "80%" height= "80%"
-              alt="utensílios"
-              />
-              <h5>Utensílios de Jardinagem 4PÇS</h5>
-            </Col>
             <Col md={4} sm={6} className="d-none d-md-block">
               <img
               className="d-block"
@@ -69,12 +61,19 @@ const Carrossel = () =>{
               />
               <h5>Suculenta Haworthia Limifolia</h5>
             </Col>
+            <Col md={4} sm={6} className="d-none d-sm-block">
+              <img
+              className="d-block"
+              src= {designSemNome2} width= "80%" height= "80%"
+              alt="utensílios"
+              />
+              <h5>Utensílios de Jardinagem 4PÇS</h5>
+            </Col>  
           </Row>
         </Carousel.Item>
       </Carousel>
       </Container>
-    </section>
-        
+    </section>      
   )
 }
     
