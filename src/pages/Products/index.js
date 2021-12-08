@@ -51,7 +51,8 @@ export default function Products() {
         </Helmet>
         <main style={{marginBottom: "120px", height:"100vh"}}>
             <h1 style={{position: "absolute", top:"45vh", left: "15vw", fontSize: "50px", color:"#606c38", fontWeight: "400"}}>Todos os produtos</h1>
-            <img style={{width: "100%", height: "70vh", objectFit: "cover", marginBottom:"40px"}} src={bannerProducts} alt="bannerProducts" />
+            <div id="bannerProducts"></div>
+            {/* <img style={{width: "100%", height: "70vh", objectFit: "cover", marginBottom:"40px"}} src={bannerProducts} alt="bannerProducts" /> */}
             <Container className="d-flex flex-wrap">
                 <Card title="teste" price="R$12,00" />
                 {categoryProducts.map(item =>{
