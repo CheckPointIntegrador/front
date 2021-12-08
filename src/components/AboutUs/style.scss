@@ -123,6 +123,7 @@ article {
   line-height: 2rem;
 }
 
+
 .profile-social a{
   color: var(--green-medium);
   font-family: 'Roboto Condensed', sans-serif;
@@ -131,6 +132,10 @@ article {
   line-height: 1.5rem;
   font-size: 2rem;
   text-decoration:none;
+}
+
+.profile-social a:hover{
+  color: var(--brown-dark);
 }
 
 
