@@ -20,5 +20,32 @@
         //padding-left:4%;
         color: var(--green-dark);
         //text-align: justify;
-    }    
+    }
+    
+    
+    .carousel-indicators{
+        margin-bottom: -30px;
+    }
+
+    .carousel-indicators button{
+        background-color: var(--green-light);
+        border-radius: 50%;
+        height: 15px;
+        width: 15px;
+    }
+
+    .carousel-control-next{
+        right: -50px;
+    }
+
+    .carousel-control-prev{
+        left: -50px;
+    }
+
+
+    
 }
+
+
+
+
