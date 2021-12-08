@@ -14,20 +14,20 @@ const CartItem = (props) => {
     currency: "BRL",
   });
   return (
-    <Row className="product-row m-5" key={id}>
-      <Col xs="auto"  className="product-col my-auto">
+    <Row className="product-row m-5 justify-content-between" key={id}>
+      <Col xs={5} md={3}  className="product-col my-auto">
         <img
           className="product-img"
           src={product.imageUrl}
           alt={product.title}
         />
       </Col>
-      <Col xs="auto" sm={2} className="product-col my-auto p-4">
+      <Col xs={7} md={3} lg={4} className="product-col my-auto p-4">
         <h3>{product.title}</h3>
       </Col>
-      <Col sm={2} className="product-col my-auto">
-        <div className="product-quantity d-flex my-4">
-          <label className="p-4" for="quantity">
+      <Col xs={12} md="auto" className="product-col my-auto">
+        <div className="product-quantity d-flex  justify-content-end">
+          <label className="py-4 px-2" for="quantity">
             Quantidade:
           </label>
           <div className="increment-decrement">
@@ -50,10 +50,10 @@ const CartItem = (props) => {
           </div>
         </div>
       </Col>
-      <Col xs={1} className="product-col my-auto">
+      <Col xs={12} md="auto" className="product-col p-2 my-auto d-flex justify-content-end">
         <h4>{subtotal}</h4>
       </Col>
-      <Col xs={1} className="product-col my-auto text-center">
+      <Col xs={12} md="auto" className="product-col p-2 my-auto d-flex justify-content-end">
         <Button variant="light" onClick={() => removeItem(product)}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
