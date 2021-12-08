@@ -8,7 +8,7 @@ import StyledButton from "../../../components/StyledButton";
 const ProductModal = (props) => {
   const { id, title, price, description, imageUrl, category } = props;
   const product = { id, title, price, description, imageUrl, category };
-  const { increment, addToCart, cartItens } = useContext(CartContext);
+  const {addToCart, cartItens } = useContext(CartContext);
   const navigate = useNavigate();
   const itemInCart = cartItens.find((item) => item.id === product.id);
 
@@ -48,14 +48,14 @@ const ProductModal = (props) => {
                 product={product}
                 text="Adicionar ao carrinho"
                 paddindMargin="mx-2 my-4 p-4 "
-              />
+                />
             ) : (
               <StyledButton
                 type="secondary"
-                action={increment}
-                product={product}
-                text="Adicionar mais"
-                paddindMargin="mx-2 p-4"
+                action={navigate}
+                product="/carrinho"
+                text="Finalizar Compra"
+                paddindMargin="mx-2 my-4 p-4"
               />
             )}
             <StyledButton
@@ -63,7 +63,7 @@ const ProductModal = (props) => {
               action={navigate}
               product="/produtos"
               text="Continuar Comprando"
-              paddindMargin="mx-2 p-4"
+              paddindMargin="mx-2 my-4 p-4"
             />
           </div>
         </Modal.Body>
