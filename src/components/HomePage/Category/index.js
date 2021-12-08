@@ -16,19 +16,19 @@ const Category = () => {
 
                     <Row className="justify-content-md-center">
                         <Col >
-                            <Image src={categoriaCacto} roundedCircle />
+                            <Image src={categoriaCacto} roundedCircle style={{objectFit:"cover"}} />
                             <p>Cacto</p>
                         </Col>
                         <Col >
-                            <Image src={categoriaSuculenta} roundedCircle />
+                            <Image src={categoriaSuculenta} roundedCircle style={{objectFit:"cover"}}/>
                             <p>Suculenta</p>
                         </Col>
                         <Col >
-                            <Image src={categoriaSamambaia} roundedCircle />
+                            <Image src={categoriaSamambaia} roundedCircle style={{objectFit:"cover"}} />
                             <p>Samambaia</p>
                         </Col>
                         <Col >
-                            <Image src={categoriaFlores} roundedCircle />
+                            <Image src={categoriaFlores} roundedCircle style={{objectFit:"cover"}}/>
                             <p>Flores</p>
                         </Col>
                         <Col >
