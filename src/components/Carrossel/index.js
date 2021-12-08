@@ -13,29 +13,28 @@ const Carrossel = () =>{
     <section id="carrossel">
       <h2>Produtos em destaque:</h2>
 
-      <Container >
        <Carousel variant="dark" id= "destaques">
-        <Carousel.Item >      
-          <Row>
-            <Col md={4} sm={6}>
+        <Carousel.Item className="teste">      
+          <Row >
+            <Col md={4} sm={6} className="mx-auto">
               <img
-              className="d-block"
+              className="d-block mx-auto"
               src= {cacto02} width= "80%" height= "80%"
               alt="cacto"
               />
               <h5>Opuntia Microdasys subsp. Albata</h5>
             </Col>
-            <Col md={4} sm={6} className="d-none d-sm-block">
+            <Col md={4} sm={6} className="d-none d-sm-block mx-auto">
               <img
-              className="d-block"
+              className="d-block mx-auto"
               src= {suculenta1} width= "80%" height= "80%"
               alt="suculenta"
               />
               <h5>Suculenta Haworthia Fasciata</h5>
             </Col>
-            <Col md={4} sm={6} className="d-none d-md-block">
+            <Col md={4} sm={6} className="d-none d-md-block mx-auto">
               <img
-              className="d-block"
+              className="d-block mx-auto"
               src= {samambaia} width= "80%" height= "80%"
               alt="samambaia"
               />
@@ -44,26 +43,26 @@ const Carrossel = () =>{
           </Row>
         </Carousel.Item>
         <Carousel.Item>
-          <Row>
-            <Col md={4} sm={6}>
+          <Row className="mx-auto">
+            <Col md={4} sm={6} className="mx-auto">
               <img
-              className="d-block"
+              className="d-block mx-auto"
               src= {flor04} width= "80%" height= "80%"
               alt="flor"
               />
               <h5>Hortênsia</h5>
             </Col>
-            <Col md={4} sm={6} className="d-none d-md-block">
+            <Col md={4} sm={6} className="d-none d-md-block mx-auto">
               <img
-              className="d-block"
+              className="d-block mx-auto"
               src= {suculenta2} width= "80%" height= "80%"
               alt="cacto"
               />
               <h5>Suculenta Haworthia Limifolia</h5>
             </Col>
-            <Col md={4} sm={6} className="d-none d-sm-block">
+            <Col md={4} sm={6} className="d-none d-sm-block mx-auto">
               <img
-              className="d-block"
+              className="d-block mx-auto"
               src= {designSemNome2} width= "80%" height= "80%"
               alt="utensílios"
               />
@@ -72,7 +71,6 @@ const Carrossel = () =>{
           </Row>
         </Carousel.Item>
       </Carousel>
-      </Container>
     </section>      
   )
 }

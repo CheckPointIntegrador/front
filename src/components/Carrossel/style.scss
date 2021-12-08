@@ -11,10 +11,6 @@
         text-align: center;
     }
 
-    .row{
-        padding-left:5%;
-    }
-
     h5{
         margin:4%;
         //padding-left:4%;
@@ -34,12 +30,9 @@
         width: 15px;
     }
 
-    .carousel-control-next{
-        right: -50px;
-    }
-
-    .carousel-control-prev{
-        left: -50px;
+    .carousel-inner{
+        width: 80%;
+        margin: 0 auto;
     }
 
 
