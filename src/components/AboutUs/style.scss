@@ -45,7 +45,11 @@ article {
 
 .caixa {
   height: 60rem;
+  &:hover{
+    transform: scale(1.2);
+  }
 }
+
 
 // *********************************************
 // #######   CONFIGURAÇÃO DA IMAGEM DO PERFIL   #######
@@ -121,6 +125,7 @@ article {
   font-weight: normal;
   font-size: 2rem;
   line-height: 2rem;
+
 }
 
 
@@ -132,11 +137,12 @@ article {
   line-height: 1.5rem;
   font-size: 2rem;
   text-decoration:none;
+  &:hover{
+    color: var(--brown-dark);
+    background-color: #E9ECEF;
+  }
 }
 
-.profile-social a:hover{
-  color: var(--brown-dark);
-}
 
 
 // *********************************************
