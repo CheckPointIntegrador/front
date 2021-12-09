@@ -19,9 +19,9 @@ html{    //definição das cores de botões
     .btn-success,
     .btn-outline-success,
     .btn-secondary{
-        font-size: 1.4rem;
+        font-size: 1rem;
         border-radius: 10px;
-        min-width: 170px;
+        // min-width: 170px;
     }
     
     
@@ -29,10 +29,11 @@ html{    //definição das cores de botões
     .btn-outline-success:focus{    
         color: var(--green-dark);
         border-color: var(--green-dark);
+        background-color: white;
         &:hover{
             background-color: rgba(#283618,0.9);
             color: var(--bg-2);
-            border-color: none;
+            border-color: transparent;
         }
     }
     
@@ -41,10 +42,11 @@ html{    //definição das cores de botões
     .btn-success:focus{
         color: var(--bg-2);
         background-color: var(--green-dark);
+        border: none;
         &:hover{
             background-color: rgba(#283618,0.9);
             color: var(--bg-2);
-            border-color: none;
+            border-color: transparent;
         }
     }
     
