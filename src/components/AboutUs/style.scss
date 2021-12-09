@@ -85,7 +85,7 @@ article {
   line-height: 3rem;
   color: var(--green-medium);
   margin-top: 7rem;
-  margin-bottom: 6rem;
+  margin-bottom: 8rem;
   font-size: 2rem;
   
   font-family: 'Roboto Condensed', sans-serif;
@@ -135,11 +135,14 @@ article {
   font-style: none;
   font-weight: normal;
   line-height: 1.5rem;
+  
   font-size: 2rem;
   text-decoration:none;
   &:hover{
     color: var(--brown-dark);
-    background-color: #E9ECEF;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background-color: rgb(233,236,239);
   }
 }
 
