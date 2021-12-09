@@ -2,12 +2,11 @@ import React, {useContext, useCallback, useState, useEffect} from 'react'
 import { useParams, useNavigate} from 'react-router'
 import Swal from 'sweetalert2'
 import { Helmet } from 'react-helmet-async';
-import ProductItem from './ProductItem'
+import ProductItem from '../../components/ProductItem'
 import { ProductsContext } from '../../context/ProductsContext'
 import './style.scss'
 import { Container } from 'react-bootstrap';
 import bannerProducts from "../../imgs/produtos/bannerProducts.jpg"
-import Card from "../../components/Card/index"
 
 export default function Products() {
     const {products} = useContext(ProductsContext)
@@ -51,10 +50,8 @@ export default function Products() {
         </Helmet>
         <main style={{marginBottom: "120px", height:"100vh"}}>
             <h1 style={{position: "absolute", top:"45vh", left: "15vw", fontSize: "50px", color:"#606c38", fontWeight: "400"}}>Todos os produtos</h1>
-            <div id="bannerProducts"></div>
-            {/* <img style={{width: "100%", height: "70vh", objectFit: "cover", marginBottom:"40px"}} src={bannerProducts} alt="bannerProducts" /> */}
-            <Container className="d-flex flex-wrap">
-                <Card title="teste" price="R$12,00" />
+            <img style={{width: "100%", height: "70vh", objectFit: "cover", marginBottom:"40px"}} src={bannerProducts} alt="bannerProducts" />
+            <Container className="d-flex flex-wrap" style={{gap: "25px"}}>
                 {categoryProducts.map(item =>{
                     return <ProductItem {...item} key={item.id}/>
                 }
