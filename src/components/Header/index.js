@@ -25,12 +25,8 @@ const Header = () => {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse className="basic-navbar-nav">
-<<<<<<< HEAD
-            <Nav className="align-items-center" style={{ width: "100%" }}>
-=======
             
             <Nav style={{ width: "100%" }}>
->>>>>>> aeefd029f427dddda76894daecdd497e5f9c09c1
               <Form
                 className="d-flex"
                 style={{ width: "100%", maxWidth: "500px" }}

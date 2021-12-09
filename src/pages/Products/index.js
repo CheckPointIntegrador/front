@@ -7,9 +7,11 @@ import { ProductsContext } from '../../context/ProductsContext'
 import './style.scss'
 import { Container } from 'react-bootstrap';
 import bannerProducts from "../../imgs/produtos/bannerProducts.jpg"
+import useAxios from '../../hooks/useAxios'
 
 export default function Products() {
     const {products} = useContext(ProductsContext)
+    // const products = useAxios(`/products`);
     
     const [categoryProducts, setCategoryProducts] = useState([]);
     const { categoryName } = useParams();
