@@ -12,9 +12,9 @@ const useAxios = (url) => {
         setData(response.data);
       } catch (error) {
         Swal.fire({
-          title: error.response.status,
+          title: error.response,
           icon: 'error',
-          text: error.response.data.message
+          text: error.response
         })
       }
     }

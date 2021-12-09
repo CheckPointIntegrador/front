@@ -1,21 +1,19 @@
-import React, {useContext, useCallback, useState, useEffect} from 'react'
+import React, { useCallback, useState, useEffect} from 'react'
 import { useParams, useNavigate} from 'react-router'
 import Swal from 'sweetalert2'
 import { Helmet } from 'react-helmet-async';
 import ProductItem from '../../components/ProductItem'
-import { ProductsContext } from '../../context/ProductsContext'
 import './style.scss'
 import { Container } from 'react-bootstrap';
 import bannerProducts from "../../imgs/produtos/bannerProducts.jpg"
-import useAxios from '../../hooks/useAxios'
+import api from '../../services/api';
 
 export default function Products() {
-    const {products} = useContext(ProductsContext)
-    // const products = useAxios(`/products`);
     
     const [categoryProducts, setCategoryProducts] = useState([]);
     const { categoryName } = useParams();
     const navigate = useNavigate();
+ 
     
 
     const getCategoryData = useCallback(async ({ categ }) => {
@@ -25,24 +23,24 @@ export default function Products() {
         // return;
         // }
         try {
-        //(essa parte quando estivermos puxando do backend)
-        // const response = await api.get(`/${categ}`);
-        // setCategory(response.data);
-        setCategoryProducts(products.filter(item => item.category === categ))
-        } catch (error) {
+
+        const response = await api.get(`/products/category/${categ}`);
+        
+        setCategoryProducts(response.data);
+        
+    } catch (error) {
         Swal.fire({
-            title: error.response.status,
+            title: 'Página não encontrada',
             icon: 'error',
-            text: error.response.data.message
         })
         }
-    }, [navigate, categoryName, products]);
+    }, [navigate, categoryName, categoryProducts]);
 
     useEffect(() => {
         if (categoryName) {
             getCategoryData({ categ: categoryName });
         } 
-    }, [ getCategoryData, categoryName, products])
+    }, [ getCategoryData, categoryName, categoryProducts])
 
 
     return (

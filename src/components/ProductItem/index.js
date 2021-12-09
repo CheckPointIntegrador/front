@@ -55,7 +55,7 @@ const ProductItem = (props) =>{
     return (
       <div className="product" key={id}>
         <Card key={id} style={{ width: '20rem', borderRadius:"18px", border: "0" , backgroundColor: "transparent", transition:"transform 0.1s", color: "#fff" }}>
-          <Card.Img style={{borderRadius:"18px", width:"100%", height: "125px", objectFit:"cover"}} variant="top" src={product.imageUrl} />
+        <Card.Img style={{borderRadius:"18px", width:"100%", height: "150px", objectFit:"cover"}} variant="top" src={product.imageUrl} /*onClick={()=> navigate(`/produtos/${id}`)}*/ />
           <Card.Body className="d-none">
               <div className="d-flex justify-content-between align-items-center">
                 <Card.Title style={{fontSize:"18px"}}>{product.title}</Card.Title>
