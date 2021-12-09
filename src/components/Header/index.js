@@ -8,6 +8,7 @@ import {
   FormControl,
   Button,
 } from "react-bootstrap";
+import Buscar from "./Buscar"
 import CartIcon from "./CartIcon";
 import { Link } from "react-router-dom";
 import search from "../../imgs/home/search.svg";
@@ -24,6 +25,7 @@ const Header = () => {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse className="basic-navbar-nav">
+            
             <Nav style={{ width: "100%" }}>
               <Form
                 className="d-flex"
@@ -31,10 +33,10 @@ const Header = () => {
               >
                 <FormControl
                   type="search"
-                  placeholder="Buscar"
+                  placeholder="Insira o nome do produto"
                   className="me-2"
                   aria-label="Buscar"
-                />
+                /> <Buscar/>
                 <Button variant="outline-light">
                   <img className= "button" src={search} alt="search" />
                 </Button>
