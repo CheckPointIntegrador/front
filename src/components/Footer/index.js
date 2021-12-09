@@ -22,12 +22,12 @@ const Footer = () => {
                         </Col>
                         <Col md={{span:4}} sm={{span:6}}>
                             <Card.Text className="text-center">
-                                <BsGithub />
+                                <a href="https://github.com/CheckPointIntegrador" target="_blank"><BsGithub /></a>
                             </Card.Text>
                         </Col>
                         <Col md={{span:2, offset:2}} sm={{span:3}}>
                             <Card.Text className="text-right" >
-                                Sobre nós
+                               <a href="/sobreNos"> Sobre nós </a>
                             </Card.Text>
                         </Col>
                         

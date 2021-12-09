@@ -31,6 +31,13 @@
         height: 2rem;
         
     }
+    a {
+        text-decoration: none;
+        color: var(--green-dark);
+    }
+    a:hover{
+        color: var(--brown-dark);
+    }
 
 }
 
