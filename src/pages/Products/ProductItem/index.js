@@ -18,7 +18,7 @@ const ProductItem = (props) =>{
       <div className="product" key={id}>
         <h3>{product.title}</h3>
         <h4>{product.price}</h4>
-        <img src={product.imageUrl} alt={product.title} />
+        <img src={product.imageUrl} alt={product.title} onClick={()=>}/>
         {!itemInCart && (
           <StyledButton
             type="success"
