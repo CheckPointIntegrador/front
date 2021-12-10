@@ -36,8 +36,8 @@ const AboutUs = () => {
                             <div className=" retangle">
                                 <div className="col-lg-6 col-xm-12 aboutme ">
                                     <h4 className="profile-name">Aline Pollis</h4>
-                                    <h5 className="profile-social"><a href="https://www.linkedin.com/in/alinepollisbeck/" target="_blank">LinkedIn</a></h5>
-                                    <h5 className="profile-social"><a href="http://github.com/lipollis" target="_blank">GitHub</a></h5>
+                                    <h5 className="profile-social"><a href="https://www.linkedin.com/in/alinepollisbeck/" target="_blank" rel="noopener noreferrer">LinkedIn</a></h5>
+                                    <h5 className="profile-social"><a href="http://github.com/lipollis" target="_blank" rel="noopener noreferrer">GitHub</a></h5>
                                 </div>
                             </div>
                         </div>
@@ -53,8 +53,8 @@ const AboutUs = () => {
                             <div className=" retangle">
                                 <div className="col-lg-6 col-xm-12 aboutme">
                                     <h4 className="profile-name">Esther Pimentel</h4>
-                                    <h5 className="profile-social"><a href=" https://www.linkedin.com/in/esther-maria-pimentel-porto-4b351a74/" target="_blank">LinkedIn</a></h5>
-                                    <h5 className="profile-social"><a href="https://github.com/EstherPimentel" target="_blank">GitHub</a></h5>
+                                    <h5 className="profile-social"><a href=" https://www.linkedin.com/in/esther-maria-pimentel-porto-4b351a74/" target="_blank" rel="noopener noreferrer">LinkedIn</a></h5>
+                                    <h5 className="profile-social"><a href="https://github.com/EstherPimentel" target="_blank" rel="noopener noreferrer">GitHub</a></h5>
                                 </div>
                             </div>
                         </div>
@@ -70,8 +70,8 @@ const AboutUs = () => {
                             <div className=" retangle">
                                 <div className="col-lg-6 col-xm-12 aboutme">
                                     <h4 className="profile-name">Giselle Piasetzki</h4>
-                                    <h5 className="profile-social"><a href="https://www.linkedin.com/in/gisellepiasetzki/" target="_blank">LinkedIn</a></h5>
-                                    <h5 className="profile-social"><a href="https://github.com/GisellePiasetzki" target="_blank">GitHub</a></h5>
+                                    <h5 className="profile-social"><a href="https://www.linkedin.com/in/gisellepiasetzki/" target="_blank" rel="noopener noreferrer">LinkedIn</a></h5>
+                                    <h5 className="profile-social"><a href="https://github.com/GisellePiasetzki" target="_blank" rel="noopener noreferrer">GitHub</a></h5>
                                 </div>
                             </div>
                         </div>
@@ -87,8 +87,8 @@ const AboutUs = () => {
                             <div className=" retangle">
                                 <div className="col-lg-6 col-xm-12 aboutme">
                                     <h4 className="profile-name">Letícia Carmo</h4>
-                                    <h5 className="profile-social"><a href="https://www.linkedin.com/in/leticia-carmo-/" target="_blank">LinkedIn</a></h5>
-                                    <h5 className="profile-social"><a href="https://github.com/liacarmo" target="_blank">GitHub</a></h5>
+                                    <h5 className="profile-social"><a href="https://www.linkedin.com/in/leticia-carmo-/" target="_blank" rel="noopener noreferrer">LinkedIn</a></h5>
+                                    <h5 className="profile-social"><a href="https://github.com/liacarmo" target="_blank" rel="noopener noreferrer">GitHub</a></h5>
                                 </div>
                             </div>
                         </div>
@@ -104,8 +104,8 @@ const AboutUs = () => {
                             <div className=" retangle">
                                 <div className="col-lg-6 col-xm-12 aboutme">
                                     <h4 className="profile-name">Silas Medeiros</h4>
-                                    <h5 className="profile-social"><a href="https://www.linkedin.com/in/silas-medeiros-6b44a0213/" target="_blank">LinkedIn</a></h5>
-                                    <h5 className="profile-social"><a href="https://github.com/silasms" target="_blank">GitHub</a></h5>
+                                    <h5 className="profile-social"><a href="https://www.linkedin.com/in/silas-medeiros-6b44a0213/" target="_blank" rel="noopener noreferrer">LinkedIn</a></h5>
+                                    <h5 className="profile-social"><a href="https://github.com/silasms" target="_blank" rel="noopener noreferrer">GitHub</a></h5>
                                 </div>
                             </div>
                         </div>
@@ -121,8 +121,8 @@ const AboutUs = () => {
                             <div className=" retangle">
                                 <div className="col-lg-6 col-xm-12 aboutme">
                                     <h4 className="profile-name">Thays Gama</h4>
-                                    <h5 className="profile-social"><a href="https://www.linkedin.com/in/thaysgama/" target="_blank">LinkedIn</a></h5>
-                                    <h5 className="profile-social"><a href="https://github.com/thaysgama" target="_blank">GitHub</a></h5>
+                                    <h5 className="profile-social"><a href="https://www.linkedin.com/in/thaysgama/" target="_blank" rel="noopener noreferrer">LinkedIn</a></h5>
+                                    <h5 className="profile-social"><a href="https://github.com/thaysgama" target="_blank" rel="noopener noreferrer">GitHub</a></h5>
                                 </div>
                             </div>
                         </div>
