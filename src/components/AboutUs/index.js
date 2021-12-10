@@ -37,7 +37,7 @@ const AboutUs = () => {
                             <div className=" retangle">
                                 <div className="col-lg-6 col-xm-12 aboutme ">
                                     <h4 className="profile-name">Aline Pollis</h4>
-                                    <h5 className="profile-social"><a href="https://www.linkedin.com/in/aline-pollis-beck/" target="_blank">LinkedIn</a></h5>
+                                    <h5 className="profile-social"><a href="https://www.linkedin.com/in/alinepollisbeck/" target="_blank">LinkedIn</a></h5>
                                     <h5 className="profile-social"><a href="http://github.com/lipollis" target="_blank">GitHub</a></h5>
                                 </div>
                             </div>
