@@ -1,10 +1,13 @@
 import {Carousel, Row, Col} from 'react-bootstrap';
 import useAxios from '../../hooks/useAxios';
 import './style.scss';
+import { useNavigate } from 'react-router-dom';
 
 const Carrossel = () =>{
   
-const data = useAxios('/products')
+  const navigate = useNavigate();
+  
+  const data = useAxios('/products')
 
   return (
     
@@ -22,7 +25,7 @@ const data = useAxios('/products')
               className="d-block mx-auto"
               src= {imageUrl} width= "80%" height= "80%"
               alt={title}
-              />
+              onClick={()=>navigate('/produtos/')}/>
               <h5>{title}</h5>
             </Col>
            )}).slice(0,3))}
@@ -38,6 +41,7 @@ const data = useAxios('/products')
               className="d-block mx-auto"
               src= {imageUrl} width= "80%" height= "80%"
               alt={title}
+              onClick={()=>navigate('/produtos/')}
               />
               <h5>{title}</h5>
             </Col>
