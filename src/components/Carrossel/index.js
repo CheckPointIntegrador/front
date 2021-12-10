@@ -1,21 +1,9 @@
 import {Carousel, Row, Col} from 'react-bootstrap';
-//import {useEffect, useState } from 'react';
 import useAxios from '../../hooks/useAxios';
-import cacto02 from '../../imgs/destaques/cacto02.jpg';
-import suculenta1 from '../../imgs/destaques/suculenta_Haworthia_Fasciata.jpg';
-import samambaia from '../../imgs/destaques/Samambaia_Americana.jpg';
-import flor04 from '../../imgs/destaques/hortensia.jpg';
-import designSemNome2 from '../../imgs/destaques/utensilios.jpg';
-import suculenta2 from '../../imgs/destaques/suculenta_Haworthia_limifolia.jpg';
-import api from '../../services/api';
 import './style.scss';
 
 const Carrossel = () =>{
-  /*const [data, setData] = useState([]);
-
-  useEffect(()=>{
-    api.get('/products').then((response)=>setData(response.data);
-  }, []) */
+  
 const data = useAxios('/products')
 
   return (
