@@ -21,7 +21,7 @@ const Header = () => {
       <Navbar bg="light" expand="lg">
         <Container fluid id="home">
           <Navbar.Brand className="nav-brand">
-            <img src={logo2}></img>
+            <a href="/"><img src={logo2}></img></a>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse className="basic-navbar-nav">
