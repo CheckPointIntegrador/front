@@ -1,6 +1,5 @@
 
 // eslint-disable-next-lin
-import { Component } from 'react';
 import './style.scss';
 import '../../App.scss'
 

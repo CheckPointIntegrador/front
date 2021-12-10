@@ -8,7 +8,6 @@ import {
 import Buscar from "./Buscar"
 import CartIcon from "./CartIcon";
 import { Link } from "react-router-dom";
-import search from "../../imgs/home/search.svg";
 import "./style.scss";
 import logo2 from "../../imgs/logo2.png";
 

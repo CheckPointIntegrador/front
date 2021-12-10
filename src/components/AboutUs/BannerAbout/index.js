@@ -1,4 +1,3 @@
-import {Image} from 'react-bootstrap';
 import './style.scss';
 
 
