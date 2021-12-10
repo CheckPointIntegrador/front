@@ -1,5 +1,4 @@
 import { useContext } from "react"
-import {useNavigate} from "react-router-dom"
 import { CartContext } from "../../context/CartContext"
 import ProductModal from '../ProductModal'
 import './style.scss'
@@ -9,7 +8,6 @@ import { Card, Col } from "react-bootstrap"
 const ProductItem = (props) =>{
     const {id, title, price, description, imageUrl, category} = props;
     const product = {id, title, price, description, imageUrl, category};
-    const navigate = useNavigate();
     const {addToCart, increment, cartItens} = useContext(CartContext);
     
     const itemInCart = cartItens.find(item => item.id === product.id);
