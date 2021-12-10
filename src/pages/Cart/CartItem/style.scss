@@ -6,23 +6,21 @@
         object-fit: cover;
         border-radius: 0.5rem;
     }
-    .product-quantity{
-        font-size: 1.5rem;
-        .increment-decrement{
-            background-color:  rgba(#DDA15E, .2);
-            
-            input[type=submit]{
-                border-style: none;
-                background-color:  transparent;
-                font-size: 1.8rem;
-                font-weight: 500;
-            }
-            
-        }
-    }
-    
     
 }
 
-
+.product-quantity{
+    font-size: 1.5rem;
+    .increment-decrement{
+        background-color:  rgba(#DDA15E, .2);
+        
+        input[type=submit]{
+            border-style: none;
+            background-color:  transparent;
+            font-size: 1.8rem;
+            font-weight: 500;
+        }
+        
+    }
+}
     
