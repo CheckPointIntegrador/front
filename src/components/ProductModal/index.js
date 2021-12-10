@@ -8,12 +8,13 @@ import StyledButton from "../StyledButton/index";
 const ProductModal = (props) => {
   const { id, title, price, description, imageUrl, category } = props;
   const product = { id, title, price, description, imageUrl, category };
-  const {addToCart, increment, decrement,  cartItens } = useContext(CartContext);
+  const {addToCart, increment, decrement,  removeItem,  cartItens } = useContext(CartContext);
   const navigate = useNavigate();
   const itemInCart = cartItens.find((item) => item.id === product.id);
 
-
+  
   const [lgShow, setLgShow] = useState(false);
+  const handleClose = () => setLgShow(false);
 
   return (
     <>
@@ -22,7 +23,7 @@ const ProductModal = (props) => {
         className="modal"
         size="lg"
         show={lgShow}
-        onHide={() => setLgShow(false)}
+        onHide={handleClose}
         aria-labelledby="contained-modal-title-vcenter"
         centered
       >
@@ -39,7 +40,7 @@ const ProductModal = (props) => {
             <div className="info-price">R$ {price.toFixed(2)}</div>
             <div className="info-description">{description}</div>
 
-            <Container xs={12} md="auto" className="product-col my-auto">
+            <Container xs={12} md="auto" className="product my-4">
               <div className="product-quantity d-flex">
                 <label className="py-4 px-2" for="quantity">
                   Quantidade:
@@ -50,7 +51,7 @@ const ProductModal = (props) => {
                     type="submit"
                     value="-"
                     name="quantity"
-                    onClick={() => decrement(product)}
+                    onClick={() => itemInCart && itemInCart.quantity > 1 ? decrement(product) : itemInCart ? removeItem(product) : null}
                   />
                   <span>{itemInCart ? itemInCart.quantity : 0}</span>
                   
@@ -59,7 +60,7 @@ const ProductModal = (props) => {
                     type="submit"
                     value="+"
                     name="quantity"
-                    onClick={() => increment(product)}
+                    onClick={() => itemInCart ? increment(product) : addToCart(product)}
                   />
                 </div>
               </div>
@@ -84,8 +85,7 @@ const ProductModal = (props) => {
             )}
             <StyledButton
               type="outline-success"
-              action={navigate}
-              product="/produtos"
+              action={handleClose}
               text="Continuar Comprando"
               paddindMargin="mx-2 my-4 p-4"
             />

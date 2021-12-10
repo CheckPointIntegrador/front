@@ -4,7 +4,7 @@ import Swal from "sweetalert2"
 
 const StyledButton = (props) =>{
 
-    const {type, action, product, text, paddindMargin, modal} = props
+    const {type, action, product, text, paddindMargin, modal, ariaLabel} = props
 
     //types: success, outline-success, secondary
 
@@ -29,6 +29,7 @@ const StyledButton = (props) =>{
 
             <Button
                 variant={type}
+                aria-label={ariaLabel}
                 className={paddindMargin}
                 onClick={()=> {
                   action(product)
