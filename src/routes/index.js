@@ -3,7 +3,6 @@ import Home from '../pages/Home';
 import NotFound from '../pages/NotFound';
 import Cart from '../pages/Cart';
 import Products from '../pages/Products';
-import ProdutoUnidade from '../pages/ProdutoUnidade';
 import CartContextProvider from '../context/CartContext';
 import ProductsContextProvider from '../context/ProductsContext';
 import About from '../pages/About';
@@ -21,7 +20,6 @@ const RouteList = () => (
               <Route path="/" element={<Home />} />
               <Route path="/carrinho" element={<Cart />} />
               <Route path="/produtos" element={<Products />} />
-              <Route path="/produtos/:id" element={<ProdutoUnidade />} />
               <Route path="/categoria/:categoryName" element={<Products />} />
               <Route path="/sobreNos" element ={<About />} />
               <Route path="*" element={<NotFound />} />

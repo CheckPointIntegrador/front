@@ -1,23 +1,21 @@
-import { Component } from 'react';
+import { useState } from 'react';
 import { Formik, Form, Field } from 'formik';
+import {Nav, FormControl, Button} from 'react-bootstrap';
 import Swal from 'sweetalert2';
+
 import api from '../../../services/api';
 import './style.scss';
+import search from "../../../imgs/home/search.svg";
 
-export default class Buscar extends Component {
-  constructor() {
-    super();
-    this.state = {
-      repositorios: []
-    }
-  }
+const Buscar = () => {
+  const [data, setData] = useState([]);
 
-  
-
-  handleSubmit = async ({ nomeUsuario }) => {
+  const handleSubmit = async ({ title }) => {
     try {
-      const response = await api.get(`/users/${nomeUsuario}/repos`);
-      this.setState({ repositorios: response.data });
+      const response = await api.get(`/products`);
+      const responseFilter = response.data.filter(prod => prod.title.includes(title) || prod.category.includes(title) ?  prod : "")
+        
+      setData(responseFilter);
     } catch (error) {
       Swal.fire({
         title: error.response.status,
@@ -27,30 +25,40 @@ export default class Buscar extends Component {
     }
   }
 
-  render() {
     return (
       <>
-        <div >
-        
-          <Formik initialValues={{ nomeUsuario: '' }} onSubmit={this.handleSubmit}>
-            <Form>
-              <Field placeholder="Insira o nome do usuário" required type="text" name="nomeUsuario" id="nomeUsuario" className="form-control my-3" />
-              <button className="btn btn-primary" type="submit">Pesquisar</button>
+          <Formik initialValues={{ title: '' }} onSubmit={handleSubmit}>
+            <Form
+            className="d-flex"
+            style={{ width: "100%", maxWidth: "500px" }}
+            >
+              <Field placeholder="Insira o nome do usuário" required type="text" name="title" id="title" className="form-control" />
+              <Button type="submit" variant="primary" className="my-3">Pesquisar</Button>
             </Form>
           </Formik>
-          {this.state.repositorios && (
-            <ol className="list-group list-group-numbered my-3">
-              {this.state.repositorios.map(({ id, name, html_url }) => {
-                return (
-                  <li key={id}>
-                    <a target="_blank" href={html_url} rel="noreferrer">{name}</a>
-                  </li>
-                )
-              })}
-            </ol>
-          )}
-        </div>
+          {console.log(data)}
+
+
+          {/* <Nav style={{ width: "100%" }}>
+              <Form
+                className="d-flex"
+                style={{ width: "100%", maxWidth: "500px" }}
+              >
+                <FormControl
+                  type="search"
+                  placeholder="Insira o nome do produto"
+                  className="me-2"
+                  aria-label="Buscar"
+                />
+                <Button variant="outline-light">
+                  <img className= "button" src={search} alt="search" />
+                </Button>
+              </Form>
+    </Nav> */}
+
+       <h1>OI</h1>
       </>
     );
   }
-}
+
+export default Buscar;
