@@ -35,13 +35,13 @@ export default function Products() {
             buttonsStyling: false
         })
         }
-    }, [navigate, categoryName, categoryProducts]);
+    }, [navigate, categoryName]);
 
     useEffect(() => {
         if (categoryName) {
             getCategoryData({ categ: categoryName });
         } 
-    }, [ getCategoryData, categoryName, categoryProducts])
+    }, [ getCategoryData, categoryName])
 
 
     return (
