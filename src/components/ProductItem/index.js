@@ -22,13 +22,24 @@ const ProductItem = (props) =>{
         const secondSibling = cardTarget.nextElementSibling.nextElementSibling
         firstSibling.classList.add("d-none")
         secondSibling.classList.add("d-none")
+        cardTarget.onclick = null
+        cardTarget.parentElement.style.height = "220px"
+        cardTarget.parentElement.style.position = "static"
         cardTarget.parentElement.style.transform = "scale(1)"
+        cardTarget.parentElement.parentElement.style.zIndex = "1"
+        cardTarget.style.cursor = "initial"
         cardTarget = null
     }
 
     const addStyling = () => {
-        cardTarget.parentElement.style.backgroundColor = "#606C38BD"
+        cardTarget.parentElement.style.backgroundColor = "rgba(96, 108, 56, 0.95)"
         cardTarget.parentElement.style.transform = "scale(1.2)"
+        cardTarget.parentElement.style.height = "315px"
+        cardTarget.parentElement.style.position = "absolute"
+        cardTarget.parentElement.parentElement.style.zIndex = "5"
+        cardTarget.style.cursor = "pointer"
+        const keyId = cardTarget.parentElement.id
+        cardTarget.onclick = () => {navigate(`/produtos/${keyId}`)}
         const firstSibling = cardTarget.nextElementSibling
         const secondSibling = cardTarget.nextElementSibling.nextElementSibling
         firstSibling.classList.remove("d-none")
@@ -53,8 +64,8 @@ const ProductItem = (props) =>{
 
 
     return (
-      <Col xs={12} md={6} lg={4} className="product d-flex justify-content-center py-4 my-4" key={id}>
-        <Card key={id} style={{ width: '28rem', borderRadius:"18px", border: "0" , backgroundColor: "transparent", transition:"transform 0.1s", color: "#fff" }}>
+      <Col xs={12} md={6} lg={4} className="product d-flex justify-content-center py-4 my-4" style={{zIndex: 1}} key={product.id}>
+        <Card id={id} style={{ width: '28rem', borderRadius:"18px", border: "0" , backgroundColor: "transparent", transition:"transform 0.1s", color: "#fff" }}>
         <Card.Img style={{borderRadius:"18px", width:"100%", height: "220px", objectFit:"cover"}} variant="top" src={product.imageUrl} /*onClick={()=> navigate(`/produtos/${id}`)}*/ />
           <Card.Body className="d-none">
               <div className="d-flex justify-content-between align-items-center">
