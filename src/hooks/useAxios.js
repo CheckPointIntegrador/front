@@ -3,7 +3,7 @@ import Swal from 'sweetalert2';
 import api from '../services/api';
 
 const useAxios = (url) => {
-  const [data, setData] = useState({});
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     async function loadData() {

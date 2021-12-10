@@ -18,7 +18,7 @@ import logo2 from "../../imgs/logo2.png";
 const Header = () => {
   return (
     <section id="header">
-      <Navbar bg="light" expand="lg">
+      <Navbar expand="lg">
         <Container fluid id="home">
           <Navbar.Brand className="nav-brand">
             <a href="/"><img src={logo2}></img></a>
