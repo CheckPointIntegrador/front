@@ -3,10 +3,7 @@ import {
   Navbar,
   Nav,
   NavDropdown,
-  Container,
-  Form,
-  FormControl,
-  Button,
+  Container
 } from "react-bootstrap";
 import Buscar from "./Buscar"
 import CartIcon from "./CartIcon";
