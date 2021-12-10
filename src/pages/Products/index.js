@@ -50,10 +50,13 @@ export default function Products() {
           <title>Casa das Plantinhas</title>
         </Helmet>
         <main style={{marginBottom: "120px"}}>
-            <h1 style={{position: "absolute", bottom:"45%", left: "15vw", fontSize: "50px", color:"#606c38", fontWeight: "400"}}>Todos os produtos</h1>
+            <h1 style={{position: "absolute", bottom:"45%", left: "15vw", fontSize: "50px", color:"#606c38", fontWeight: "400"}}>
+                {input===undefined ?  "Todos os produtos" :  "Resultado da pesquisa"}
+                
+                </h1>
             <img style={{width: "100%", height: "70vh", objectFit: "cover", marginBottom:"40px", objectPosition: "right"}} src={bannerProducts} alt="bannerProducts" />
             <h1 style={{color: "#606C38", margin: "80px 0 25px 70px"}}>
-                {input ?  "Resultado da pesquisa" :  "Todos os produtos"}
+                Todos os produtos
             </h1>
             <Row className="d-flex">
                 {products.map(item =>{

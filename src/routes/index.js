@@ -4,7 +4,6 @@ import NotFound from '../pages/NotFound';
 import Cart from '../pages/Cart';
 import Products from '../pages/Products';
 import CartContextProvider from '../context/CartContext';
-import ProductsContextProvider from '../context/ProductsContext';
 import About from '../pages/About';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -14,7 +13,6 @@ import { HelmetProvider } from 'react-helmet-async';
 const RouteList = () => (
     <BrowserRouter>
      <HelmetProvider>
-        <ProductsContextProvider>
           <CartContextProvider>
             <Header/>
             <Routes>
@@ -28,7 +26,6 @@ const RouteList = () => (
             </Routes>
             <Footer/>
           </CartContextProvider>
-        </ProductsContextProvider>
       </HelmetProvider>
     </BrowserRouter>
       

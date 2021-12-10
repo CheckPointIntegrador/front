@@ -73,7 +73,7 @@ export default function Products() {
     return (
         <>
         <Helmet>
-          <title>Casa das Plantinhas</title>
+          <title>Casa das Plantinhas | {categoryName}</title>
         </Helmet>
         <main style={{marginBottom: "120px"}}>
             <div style={{width: "80%", height:"250px", margin:"0 auto"}} className='banner d-flex align-items-center'>
