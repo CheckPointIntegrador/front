@@ -49,6 +49,7 @@ export default function Products() {
         <main style={{marginBottom: "120px"}}>
             <h1 style={{position: "absolute", top:"45vh", left: "15vw", fontSize: "50px", color:"#606c38", fontWeight: "400"}}>Todos os produtos</h1>
             <img style={{width: "100%", height: "70vh", objectFit: "cover", marginBottom:"40px"}} src={bannerProducts} alt="bannerProducts" />
+            <h1 style={{color: "#606C38", margin: "80px 0 25px 70px"}}>Todos os produtos</h1>
             <Row className="d-flex">
                 {products.map(item =>{
                     return <ProductItem {...item} key={item.id}/>
