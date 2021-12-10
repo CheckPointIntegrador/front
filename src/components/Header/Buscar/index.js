@@ -1,64 +1,41 @@
-import { useState } from 'react';
 import { Formik, Form, Field } from 'formik';
 import {Nav, FormControl, Button} from 'react-bootstrap';
-import Swal from 'sweetalert2';
-
-import api from '../../../services/api';
 import './style.scss';
 import search from "../../../imgs/home/search.svg";
+import { useNavigate } from 'react-router-dom';
 
 const Buscar = () => {
-  const [data, setData] = useState([]);
+  const navigate = useNavigate();
 
   const handleSubmit = async ({ title }) => {
-    try {
-      const response = await api.get(`/products`);
-      const responseFilter = response.data.filter(prod => prod.title.includes(title) || prod.category.includes(title) ?  prod : "")
-        
-      setData(responseFilter);
-    } catch (error) {
-      Swal.fire({
-        title: error.response.status,
-        icon: 'error',
-        text: error.response.data.message
-      });
-    }
-  }
+    navigate(`/produtos/buscar/${title}`);
+  };
 
-    return (
-      <>
-          <Formik initialValues={{ title: '' }} onSubmit={handleSubmit}>
-            <Form
+  return (
+    <>
+      <Nav className="px-4" style={{ width: "100%" }}>
+        <Formik initialValues={{ title: "" }} onSubmit={handleSubmit}>
+          <Form
             className="d-flex"
-            style={{ width: "100%", maxWidth: "500px" }}
-            >
-              <Field placeholder="Insira o nome do usuário" required type="text" name="title" id="title" className="form-control" />
-              <Button type="submit" variant="primary" className="my-3">Pesquisar</Button>
-            </Form>
-          </Formik>
-          {console.log(data)}
-
-
-          {/* <Nav style={{ width: "100%" }}>
-              <Form
-                className="d-flex"
-                style={{ width: "100%", maxWidth: "500px" }}
-              >
-                <FormControl
-                  type="search"
-                  placeholder="Insira o nome do produto"
-                  className="me-2"
-                  aria-label="Buscar"
-                />
-                <Button variant="outline-light">
-                  <img className= "button" src={search} alt="search" />
-                </Button>
-              </Form>
-    </Nav> */}
-
-       <h1>OI</h1>
-      </>
-    );
-  }
+            style={{ height: "3.2rem", width: "100%", maxWidth: "500px" }}
+          >
+            <FormControl
+              as={Field}
+              placeholder="Buscar"
+              required
+              type="search"
+              name="title"
+              id="title"
+              className="me-2"
+            />
+            <Button type="submit" variant="outline-light" className="m-auto">
+              <img className="button" src={search} alt="search" />
+            </Button>
+          </Form>
+        </Formik>
+      </Nav>
+    </>
+  );
+};
 
 export default Buscar;

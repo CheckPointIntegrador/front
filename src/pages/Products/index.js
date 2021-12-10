@@ -11,21 +11,21 @@ import api from '../../services/api';
 export default function Products() {
     
     const [products, setProducts] = useState([]);
-    const { categoryName } = useParams();
+    const { input } = useParams();
     const navigate = useNavigate();
     
 
-    const getData = useCallback(async () => {
-        //(essa parte é quando for linkar com o botao de pesquisa)
-        // if (categoryName !== categ && categ !== '') {
-        // navigate(`/${categ}`);
-        // return;
-        // }
-        try {
-
-        const response = await api.get(`/products`);
+    const getData = useCallback(async ({userInput}) => {
         
-        setProducts(response.data);
+        try {
+            if(userInput !== ""){
+                console.log(userInput)
+                const response = await api.get(`/products/search/${userInput}`);
+                setProducts(response.data);
+            } else{
+                const response = await api.get(`/products`);
+                setProducts(response.data);
+            }
         
     } catch (error) {
         Swal.fire({
@@ -34,11 +34,16 @@ export default function Products() {
             buttonsStyling: false
         })
         }
-    }, [navigate, categoryName]);
+    }, [input, products]);
 
     useEffect(() => {
-            getData();
-    }, [getData])
+        
+        if (input) {
+            getData({ userInput: input });
+            console.log(products)
+        } 
+        getData({ userInput: "" });
+    }, [getData, products, input])
 
 
     return (
@@ -49,7 +54,9 @@ export default function Products() {
         <main style={{marginBottom: "120px"}}>
             <h1 style={{position: "absolute", bottom:"45%", left: "15vw", fontSize: "50px", color:"#606c38", fontWeight: "400"}}>Todos os produtos</h1>
             <img style={{width: "100%", height: "70vh", objectFit: "cover", marginBottom:"40px", objectPosition: "right"}} src={bannerProducts} alt="bannerProducts" />
-            <h1 style={{color: "#606C38", margin: "80px 0 25px 70px"}}>Todos os produtos</h1>
+            <h1 style={{color: "#606C38", margin: "80px 0 25px 70px"}}>
+                {input ?  "Resultado da pesquisa" :  "Todos os produtos"}
+            </h1>
             <Row className="d-flex">
                 {products.map(item =>{
                     return <ProductItem {...item} key={item.id}/>

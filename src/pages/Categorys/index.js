@@ -21,11 +21,10 @@ export default function Products() {
     
 
     const getCategoryData = useCallback(async ({ categ }) => {
-        //(essa parte é quando for linkar com o botao de pesquisa)
-        // if (categoryName !== categ && categ !== '') {
-        // navigate(`/${categ}`);
-        // return;
-        // }
+        if (categoryName !== categ && categ !== '') {
+            navigate(`/${categ}`);
+            return;
+        }
         try {
 
         const response = await api.get(`/products/category/${categ}`);

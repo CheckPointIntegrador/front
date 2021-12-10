@@ -21,32 +21,21 @@ const Header = () => {
       <Navbar expand="lg">
         <Container fluid id="home">
           <Navbar.Brand className="nav-brand">
-            <a href="/"><img src={logo2}></img></a>
+            <a href="/">
+              <img src={logo2}></img>
+            </a>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse className="basic-navbar-nav">
-            
-            {/* <Buscar/> */}
-             <Nav style={{ width: "100%" }}>
-              <Form
-                className="d-flex"
-                style={{ width: "100%", maxWidth: "500px" }}
-              >
-                <FormControl
-                  type="search"
-                  placeholder="Insira o nome do produto"
-                  className="me-2"
-                  aria-label="Buscar"
-                />
-                <Button variant="outline-light">
-                  <img className= "button" src={search} alt="search" />
-                </Button>
-              </Form>
-            </Nav> 
+            <Buscar />
 
             <Nav className="d-flex align-items-center">
-              <Nav.Link as={Link} to={"/"}>Home</Nav.Link>
-              <Nav.Link as={Link} to={"/produtos"}>Produtos</Nav.Link>
+              <Nav.Link as={Link} to={"/"}>
+                Home
+              </Nav.Link>
+              <Nav.Link as={Link} to={"/produtos"}>
+                Produtos
+              </Nav.Link>
               <NavDropdown title="Categorias" className="basic-nav-dropdown">
                 <NavDropdown.Item as={Link} to={"/categoria/suculentas"}>
                   Suculentas
@@ -64,7 +53,11 @@ const Header = () => {
                   Jardinagem
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link style={{ whiteSpace: "nowrap" }} as={Link} to={"/sobreNos"}>
+              <Nav.Link
+                style={{ whiteSpace: "nowrap" }}
+                as={Link}
+                to={"/sobreNos"}
+              >
                 Sobre nós
               </Nav.Link>
               <Nav.Link href="#footer">Contato</Nav.Link>
