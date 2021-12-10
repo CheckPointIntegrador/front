@@ -77,11 +77,11 @@ export default function Products() {
           <title>Casa das Plantinhas</title>
         </Helmet>
         <main style={{marginBottom: "120px"}}>
-            <div style={{width: "80%", height:"250px", margin:"0 auto"}} className='banner d-flex'>
+            <div style={{width: "80%", height:"250px", margin:"0 auto"}} className='banner d-flex align-items-center'>
                 <img style={{width:"40%", height: "100%", borderRadius: "30px", objectFit: "cover", minWidth: "200px"}} src={bannerCategorys[categoryName].image} alt="categoria"/>
                 <p className="bannerCategoryMessage justify-content-center">{bannerCategorys[categoryName].message}</p>
             </div>
-            <h1 style={{color: "#606C38", margin: "80px 0 25px 70px"}}>{categoryName[0].toUpperCase() + categoryName.slice(1)} disponiveis</h1>
+            <h1 id="title-category" style={{color: "#606C38", margin: "80px 0 25px 70px"}}>{categoryName[0].toUpperCase() + categoryName.slice(1)} disponiveis</h1>
             <Row className="d-flex">
                 {categoryProducts.map(item =>{
                     return <ProductItem {...item} key={item.id}/>
