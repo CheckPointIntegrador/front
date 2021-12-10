@@ -1,5 +1,5 @@
 import React, { useCallback, useState, useEffect} from 'react'
-import { useParams, useNavigate} from 'react-router'
+import { useParams } from 'react-router'
 import Swal from 'sweetalert2'
 import { Helmet } from 'react-helmet-async';
 import ProductItem from '../../components/ProductItem'
@@ -12,7 +12,6 @@ export default function Products() {
     
     const [products, setProducts] = useState([]);
     const { input } = useParams();
-    const navigate = useNavigate();
     
 
     const getData = useCallback(async ({userInput}) => {
@@ -33,7 +32,7 @@ export default function Products() {
             buttonsStyling: false
         })
         }
-    }, [navigate, input])
+    }, [])
 
     useEffect(() => {
         

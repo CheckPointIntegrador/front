@@ -19,33 +19,33 @@ const Carrossel = () =>{
        
           <Row >
           {data.length !==0 && (data.map(({id, imageUrl, title}, index) => {
-          return(
-            <Col key={id} md={4} sm={6} className={`mx-auto ${index===1?'d-none d-sm-block' : index===2? 'd-none d-md-block' : ''}`}>
-              <img
-              className="d-block mx-auto"
-              src= {imageUrl} width= "80%" height= "80%"
-              alt={title}
-              onClick={()=>navigate('/produtos/')}/>
-              <h5>{title}</h5>
-            </Col>
-           )}).slice(0,3))}
+            return(
+              <Col key={id} md={4} sm={6} className={`mx-auto ${index===1?'d-none d-sm-block' : index===2? 'd-none d-md-block' : ''}`}>
+                <img
+                className="d-block mx-auto"
+                src= {imageUrl} width= "80%" height= "80%"
+                alt={title}
+                onClick={()=>navigate('/produtos/')}/>
+                <h5>{title}</h5>
+              </Col>
+            )}).slice(0,3))}
            </Row>
           </Carousel.Item>
           
           <Carousel.Item>
             <Row className="mx-auto">
-          {data.length !==0 && (data.map(({id, imageUrl, title}, index) => {
-          return(
-            <Col key= {id} md={4} sm={6} className={`mx-auto ${index===4?'d-none d-sm-block' : index===5? 'd-none d-md-block' : ''}`}>
-              <img
-              className="d-block mx-auto"
-              src= {imageUrl} width= "80%" height= "80%"
-              alt={title}
-              onClick={()=>navigate('/produtos/')}
-              />
-              <h5>{title}</h5>
-            </Col>
-          )}).slice(3,6))}
+              {data.length !==0 && (data.map(({id, imageUrl, title}, index) => {
+                return(
+                  <Col key= {id} md={4} sm={6} className={`mx-auto ${index===4?'d-none d-sm-block' : index===5? 'd-none d-md-block' : ''}`}>
+                    <img
+                    className="d-block mx-auto"
+                    src= {imageUrl} width= "80%" height= "80%"
+                    alt={title}
+                    onClick={()=>navigate('/produtos/')}
+                    />
+                    <h5>{title}</h5>
+                  </Col>
+                )}).slice(3,6))}
           </Row>
           </Carousel.Item>
       </Carousel>
