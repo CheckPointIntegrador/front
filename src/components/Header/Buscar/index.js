@@ -16,7 +16,7 @@ const Buscar = () => {
       <Nav className="px-4" style={{ width: "100%" }}>
         <Formik initialValues={{ title: "" }} onSubmit={handleSubmit}>
           <Form
-            className="d-flex"
+            className="d-flex" id="search"
             style={{ height: "3.2rem", width: "100%", maxWidth: "500px" }}
           >
             <FormControl
