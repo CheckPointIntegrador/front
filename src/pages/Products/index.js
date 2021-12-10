@@ -19,7 +19,6 @@ export default function Products() {
         
         try {
             if(userInput !== ""){
-                console.log(userInput)
                 const response = await api.get(`/products/search/${userInput}`);
                 setProducts(response.data);
             } else{
@@ -34,16 +33,16 @@ export default function Products() {
             buttonsStyling: false
         })
         }
-    }, [input, products]);
+    }, [navigate, input])
 
     useEffect(() => {
         
         if (input) {
             getData({ userInput: input });
-            console.log(products)
+            return
         } 
         getData({ userInput: "" });
-    }, [getData, products, input])
+    }, [getData, input])
 
 
     return (
