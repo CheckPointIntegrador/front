@@ -70,31 +70,33 @@ const ProductItem = (props) =>{
           <Card.Body className="d-none">
               <div className="d-flex justify-content-between align-items-center">
                 <Card.Title style={{fontSize:"18px"}}>{product.title}</Card.Title>
-                <ProductModal {...product} />
               </div>
                 <Card.Text style={{fontSize:"14px"}}>
                     R${product.price},00
                 </Card.Text>
             </Card.Body>
             <Card.Body className="d-none">
-                {!itemInCart && (
-                  <StyledButton
-                    type="success"
-                    action={addToCart}
-                    product={product}
-                    text="Adicionar ao carrinho"
-                    modal={true}
-                  />
-                )}
-                {itemInCart && (
-                  <StyledButton
-                    type="outline-success"
-                    action={increment}
-                    product={product}
-                    text="Adicionar mais"
-                    modal={true}
-                  />
-                )}
+                <div className="buttons">
+                <ProductModal {...product}/>
+                  {!itemInCart && (
+                    <StyledButton
+                      type="success"
+                      action={addToCart}
+                      product={product}
+                      text="Adicionar ao carrinho"
+                      modal={true}
+                    />
+                  )}
+                  {itemInCart && (
+                    <StyledButton
+                      type="outline-success"
+                      action={increment}
+                      product={product}
+                      text="Adicionar mais"
+                      modal={true}
+                    />
+                  )}
+                </div>
             </Card.Body>
         </Card>
       </Col>

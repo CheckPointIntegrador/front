@@ -37,8 +37,7 @@
 }
 
 .btn{
-    svg{
-        fill: white;
+    &:hover{
         opacity: 0.8;
     }
 }
