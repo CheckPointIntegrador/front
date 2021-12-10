@@ -18,10 +18,10 @@ import logo2 from "../../imgs/logo2.png";
 const Header = () => {
   return (
     <section id="header">
-      <Navbar bg="light" expand="lg">
+      <Navbar expand="lg">
         <Container fluid id="home">
           <Navbar.Brand className="nav-brand">
-            <img src={logo2}></img>
+            <a href="/"><img src={logo2}></img></a>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse className="basic-navbar-nav">

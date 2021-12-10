@@ -18,7 +18,7 @@ const Footer = () => {
                 <Card.Body>
                     <Row>
                         <Col md={{span:4}} sm={{span:3}}>
-                            <Card.Text>"Em memória de Matilda, a falecidade plantinha de Esther"</Card.Text>
+                            <Card.Text>"Em memória de Matilda, a falecida plantinha de Esther"</Card.Text>
                         </Col>
                         <Col md={{span:4}} sm={{span:6}}>
                             <Card.Text className="text-center">
