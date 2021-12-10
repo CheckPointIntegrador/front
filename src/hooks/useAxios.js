@@ -14,7 +14,8 @@ const useAxios = (url) => {
         Swal.fire({
           title: error.response,
           icon: 'error',
-          text: error.response
+          text: error.response,
+          buttonsStyling: false,
         })
       }
     }

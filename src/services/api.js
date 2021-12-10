@@ -8,7 +8,7 @@ import axios from 'axios';
 
 //encontrar produtos por categoria => /products/category/ {category}
 
-//encontrar todas as categorias => /category/categories
+//encontrar todas as categorias => /categories
 
 
 const api = axios.create({

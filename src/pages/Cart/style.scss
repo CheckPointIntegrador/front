@@ -1,5 +1,10 @@
 .main-cart{
     min-height: 80vh;
+    .btn-success,
+    .btn-outline-success,
+    .btn-secondary{
+        min-width: 170px;
+    }
 }
 
 .cart-title{
