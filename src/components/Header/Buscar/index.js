@@ -7,8 +7,9 @@ import { useNavigate } from 'react-router-dom';
 const Buscar = () => {
   const navigate = useNavigate();
 
-  const handleSubmit = async ({ title }) => {
-    navigate(`/produtos/buscar/${title}`);
+  const handleSubmit = async ({ title }, {resetForm}) => {
+    navigate(`/produtos/buscar/${title}`)
+    resetForm({title: ''});
   };
 
   return (

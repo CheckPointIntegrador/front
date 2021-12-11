@@ -65,14 +65,14 @@ const ProductModal = (props) => {
                 </div>
               </div>
             </Container>
-
+            <div className="buttons d-flex flex-wrap">
             {!itemInCart ? (
               <StyledButton
                 type="success"
                 action={addToCart}
                 product={product}
                 text="Adicionar ao carrinho"
-                paddindMargin="mx-2 my-4 p-4 "
+                paddindMargin="mx-2 my-4 p-4"
               />
             ) : (
               <StyledButton
@@ -89,6 +89,7 @@ const ProductModal = (props) => {
               text="Continuar Comprando"
               paddindMargin="mx-2 my-4 p-4"
             />
+            </div>
           </div>
         </Modal.Body>
       </Modal>

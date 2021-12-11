@@ -4,6 +4,10 @@
     .modal-title{
         font-size: 2.2rem;
     }
+
+    .modal-body{
+        flex-wrap:wrap
+    }
     
     img{
         height: 200px;
@@ -31,7 +35,11 @@
     .btn-success,
     .btn-outline-success,
     .btn-secondary{
-        min-width: 170px;
+        min-width: 130px;
+    }
+
+    .buttons{
+        justify-content: center;
     }
     
 }
@@ -40,4 +48,25 @@
     &:hover{
         opacity: 0.8;
     }
+}
+
+@media (min-width: 500px) {
+    .modal{
+        .modal-body{
+            flex-wrap:nowrap
+        }
+
+    } 
+    
+}
+
+@media (min-width: 990px) {
+    .modal{
+
+        .buttons{
+            justify-content: start;
+        }
+    } 
+    
+
 }
