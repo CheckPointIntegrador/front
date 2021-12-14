@@ -5,7 +5,7 @@ import {
   NavDropdown,
   Container
 } from "react-bootstrap";
-import Buscar from "./Buscar"
+import SearchBar from "./SearchBar"
 import CartIcon from "./CartIcon";
 import { Link } from "react-router-dom";
 import "./style.scss";
@@ -23,7 +23,7 @@ const Header = () => {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse className="basic-navbar-nav">
-            <Buscar />
+            <SearchBar />
 
             <Nav className="d-flex align-items-center">
               <Nav.Link as={Link} to={"/"}>

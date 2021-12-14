@@ -11,14 +11,14 @@ import imageCacto from '../../imgs/home/categoriaCacto.jpg'
 import imageSamambaia from '../../imgs/home/categoriaSamambaia.jpg'
 import imageFlores from '../../imgs/home/categoriaFlores.jpg'
 import imageJardinagem from '../../imgs/home/categoriaJardinagem.jpg'
+import Loader from '../../components/Loader';
 
 export default function Products() {
     
     const [categoryProducts, setCategoryProducts] = useState([]);
     const { categoryName } = useParams();
     const navigate = useNavigate();
- 
-    
+    const [show, setShow] = useState(false);
 
     const getCategoryData = useCallback(async ({ categ }) => {
         if (categoryName !== categ && categ !== '') {
@@ -30,7 +30,7 @@ export default function Products() {
         const response = await api.get(`/products/category/${categ}`);
         
         setCategoryProducts(response.data);
-        
+        setShow(true)
     } catch (error) {
         Swal.fire({
             title: 'Página não encontrada',
@@ -72,6 +72,9 @@ export default function Products() {
 
     return (
         <>
+        {!show ?
+        <Loader/> :
+        <>
         <Helmet>
           <title>Casa das Plantinhas | {categoryName}</title>
         </Helmet>
@@ -89,6 +92,8 @@ export default function Products() {
                 )}
             </Row >
         </main>
+        </>
+        }
         </>
     )
 }

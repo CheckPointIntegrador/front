@@ -10,7 +10,8 @@ import Footer from '../components/Footer';
 import Categorys from "../pages/Categorys"
 import { HelmetProvider } from 'react-helmet-async';
 
-const RouteList = () => (
+const RouteList = () => {
+  return(
     <BrowserRouter>
      <HelmetProvider>
           <CartContextProvider>
@@ -29,6 +30,7 @@ const RouteList = () => (
       </HelmetProvider>
     </BrowserRouter>
       
-  );
+  )
+};
   
   export default RouteList;

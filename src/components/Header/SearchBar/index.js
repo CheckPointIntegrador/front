@@ -4,7 +4,7 @@ import './style.scss';
 import search from "../../../imgs/home/search.svg";
 import { useNavigate } from 'react-router-dom';
 
-const Buscar = () => {
+const SearchBar = () => {
   const navigate = useNavigate();
 
   const handleSubmit = async ({ title }, {resetForm}) => {
@@ -39,4 +39,4 @@ const Buscar = () => {
   );
 };
 
-export default Buscar;
+export default SearchBar;

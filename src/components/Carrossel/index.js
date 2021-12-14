@@ -1,13 +1,13 @@
 import {Carousel, Row, Col} from 'react-bootstrap';
-import useAxios from '../../hooks/useAxios';
+
 import './style.scss';
 import { useNavigate } from 'react-router-dom';
 
-const Carrossel = () =>{
-  
+const Carrossel = (props) =>{
+  const {data} = props 
+
   const navigate = useNavigate();
   
-  const data = useAxios('/products')
 
   return (
     

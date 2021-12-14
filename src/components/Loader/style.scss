@@ -1,0 +1,58 @@
+.snippet {
+  position: relative;
+  background: #fff;
+  padding: 38vh;
+  margin: 1.5rem 0;
+  min-height: 80vh;
+}
+
+.stage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 2rem 0;
+  margin: 0 -5%;
+  overflow: hidden;
+}
+
+.filter-contrast {
+  filter: contrast(5);
+  background-color: white;
+}
+
+.dot-typing {
+    position: relative;
+    left: -9999px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--green-light);
+    color: var(--green-light);
+    box-shadow: 9974px 0 0 0 var(--green-light), 9999px 0 0 0 var(--green-light), 10024px 0 0 0 var(--green-light);
+    animation: dotTyping 1.5s infinite linear;
+  }
+  
+  @keyframes dotTyping {
+    0% {
+      box-shadow: 9974px 0 0 0 var(--green-light), 9999px 0 0 0 var(--green-light), 10024px 0 0 0 var(--green-light);
+    }
+    16.667% {
+      box-shadow: 9974px -15px 0 0 var(--green-light), 9999px 0 0 0 var(--green-light), 10024px 0 0 0 var(--green-light);
+    }
+    33.333% {
+      box-shadow: 9974px 0 0 0 var(--green-light), 9999px 0 0 0 var(--green-light), 10024px 0 0 0 var(--green-light);
+    }
+    50% {
+      box-shadow: 9974px 0 0 0 var(--green-light), 9999px -15px 0 0 var(--green-light), 10024px 0 0 0 var(--green-light);
+    }
+    66.667% {
+      box-shadow: 9974px 0 0 0 var(--green-light), 9999px 0 0 0 var(--green-light), 10024px 0 0 0 var(--green-light);
+    }
+    83.333% {
+      box-shadow: 9974px 0 0 0 var(--green-light), 9999px 0 0 0 var(--green-light), 10024px -15px 0 0 var(--green-light);
+    }
+    100% {
+      box-shadow: 9974px 0 0 0 var(--green-light), 9999px 0 0 0 var(--green-light), 10024px 0 0 0 var(--green-light);
+    }
+  }
